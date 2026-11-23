@@ -72,6 +72,10 @@
     <color name="materialColorTertiaryContainer">#FFFFD8E4</color>
     <color name="materialColorOnTertiaryContainer">#FF31111D</color>
 
+    <color name="materialColorSurfaceContainer">#FFF3EDF7</color>
+    <color name="customColorSurfaceEffect0Fallback">#FFFDFCFF</color>
+    <attr name="disabledIconAlpha" format="float" />
+
     <!-- Private AOSP / SystemUI dimen fallbacks -->
     <dimen name="floating_dismiss_icon_size">24dp</dimen>
     <dimen name="floating_dismiss_background_size">48dp</dimen>
