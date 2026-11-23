@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- Fallback untuk @*android:color/system_* yang belum terekspos di SDK publik -->
+    <!-- Fallback untuk @*android:color/system_* dan @*androidprv:color/shade_panel_* -->
+    <color name="shade_panel_bg">#CC1E1E1E</color>
+    <color name="shade_panel_fg">#FFFFFFFF</color>
     <color name="system_error_dim_dark">#FF93000A</color>
     <color name="system_error_dim_light">#FFFFDAD6</color>
     <color name="system_inverse_on_surface_dark">#FF1A1C1E</color>
@@ -17,4 +19,6 @@
     <color name="system_scrim_light">#66000000</color>
     <color name="system_secondary_dim_dark">#FFB8C8DA</color>
     <color name="system_secondary_dim_light">#FF3B4858</color>
+    <color name="system_shadow_dark">#66000000</color>
+    <color name="system_shadow_light">#33000000</color>
 </resources>
