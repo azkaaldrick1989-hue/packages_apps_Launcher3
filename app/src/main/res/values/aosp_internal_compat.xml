@@ -68,5 +68,5 @@
     <dimen name="floating_dismiss_icon_size">24dp</dimen>
     <dimen name="floating_dismiss_background_size">48dp</dimen>
     <dimen name="desktop_windowing_freeform_rounded_corner_radius">16dp</dimen>
-    <dimen name="taskbar_stashed_size">24dp</dimen>
+    
 </resources>
