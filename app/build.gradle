@@ -56,7 +56,7 @@ android {
                 '../src_ui_overrides',
                 '../shared/src'
             ]
-            res.srcDirs = ['../res']
+            res.srcDirs = ['src/main/res', '../res']
             assets.srcDirs = ['../assets']
             proto {
                 srcDir '../protos'
