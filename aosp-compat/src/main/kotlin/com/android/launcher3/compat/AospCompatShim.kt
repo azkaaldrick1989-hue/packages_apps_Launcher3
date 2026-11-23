@@ -1,13 +1,5 @@
 package com.android.launcher3.compat
 
-import android.content.ComponentName
-import android.content.Context
-import android.graphics.drawable.Drawable
-import android.os.Binder
-import android.os.IBinder
-import android.os.IInterface
-import android.os.UserHandle
-
 /**
  * Kompatibilitas SafeCloseable untuk Closeable / SAM / lambda.
  */
@@ -34,7 +26,6 @@ annotation class ThreadSafe
 
 /**
  * Shim Flags untuk menggantikan flag aconfig/build AOSP saat build Gradle standalone.
- * Tambahkan method/property flag sesuai nama yang muncul di error compiler.
  */
 object Flags {
     @JvmStatic
@@ -54,10 +45,10 @@ object Flags {
 }
 
 open class IconProvider(
-    private val context: Context? = null
+    private val context: Any? = null
 ) {
-    open fun getIcon(info: Any?, iconDpi: Int = 0): Drawable? = null
-    open fun getIcon(componentName: ComponentName?, userHandle: UserHandle? = null): Drawable? = null
+    open fun getIcon(info: Any?, iconDpi: Int = 0): Any? = null
+    open fun getIcon(componentName: Any?, userHandle: Any? = null): Any? = null
     open fun registerIconChangeListener(listener: Any?): SafeCloseable = SafeCloseable {}
 }
 
@@ -87,7 +78,15 @@ open class RemoteAnimationRunnerCompat {
 }
 
 interface RecentsAnimationListener {
-    fun onAnimationStart(controller: Any?, transitionTargets: Array<Any>?, apps: Array<Any>?, homeContentEnter: Boolean, transit: Int, wallpaperTargets: Array<Any>?) {}
+    fun onAnimationStart(
+        controller: Any?,
+        transitionTargets: Array<Any>?,
+        apps: Array<Any>?,
+        homeContentEnter: Boolean,
+        transit: Int,
+        wallpaperTargets: Array<Any>?
+    ) {}
+
     fun onAnimationCanceled(taskIds: IntArray?, taskSnapshots: Map<Int, Any>?) {}
     fun onTasksAppeared(apps: Array<Any>?) {}
 }
@@ -99,15 +98,15 @@ interface TaskStackChangeListener {
 }
 
 interface PluginListener<T> {
-    fun onPluginConnected(plugin: T?, pluginContext: Context?) {}
+    fun onPluginConnected(plugin: T?, pluginContext: Any?) {}
     fun onPluginDisconnected(plugin: T?) {}
 }
 
 interface PluginEnabler {
-    fun setEnabled(component: ComponentName?) {}
-    fun setDisabled(component: ComponentName?, reason: Int) {}
-    fun isEnabled(component: ComponentName?): Boolean = true
-    fun getDisableReason(component: ComponentName?): Int = 0
+    fun setEnabled(component: Any?) {}
+    fun setDisabled(component: Any?, reason: Int) {}
+    fun isEnabled(component: Any?): Boolean = true
+    fun getDisableReason(component: Any?): Int = 0
 }
 
 interface ResourceProvider {
@@ -117,8 +116,8 @@ interface ResourceProvider {
 }
 
 open class ComponentKey(
-    val componentName: ComponentName? = null,
-    val user: UserHandle? = null
+    val componentName: Any? = null,
+    val user: Any? = null
 ) {
     override fun equals(other: Any?): Boolean {
         if (this === other) return true
@@ -150,6 +149,6 @@ interface UnfoldTransitionProgressProvider {
     fun removeCallback(listener: Any?) {}
 }
 
-open class Stub : Binder(), IInterface {
-    override fun asBinder(): IBinder = this
+open class Stub {
+    open fun asBinder(): Any? = null
 }
