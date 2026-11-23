@@ -20,17 +20,14 @@ jobs:
         with:
           java-version: '17'
           distribution: 'temurin'
-          cache: 'gradle'
 
-      - name: Build with Gradle Wrapper
-        run: |
-          if [ -f "./gradlew" ]; then
-            chmod +x ./gradlew
-            ./gradlew assembleDebug --stacktrace
-          else
-            echo "File gradlew belum ditemukan di root repositori. Pastikan struktur Gradle sudah ditambahkan."
-            exit 1
-          fi
+      - name: Setup Gradle 8.9
+        uses: gradle/actions/setup-gradle@v4
+        with:
+          gradle-version: '8.9'
+
+      - name: Build with Gradle
+        run: gradle assembleDebug --stacktrace
 
       - name: Upload APK artifact
         if: always()
