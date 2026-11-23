@@ -157,4 +157,7 @@
     <dimen name="desktop_windowing_freeform_rounded_corner_radius">16dp</dimen>
     <attr name="disabledIconAlpha" format="float" />
     <attr name="loadingIconColor" format="color" />
+
+
+    <style name="Switch.SettingsLib" parent="Widget.AppCompat.CompoundButton.Switch" />
 </resources>
