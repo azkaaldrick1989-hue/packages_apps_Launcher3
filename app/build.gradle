@@ -92,8 +92,11 @@ protobuf {
 }
 
 dependencies {
-    // Akan otomatis dimuat jika file .jar sudah ditaruh di app/libs/
-    compileOnly fileTree(dir: 'libs', include: ['*.jar'])
+    // Modul lokal penghasil .jar shim kompatibilitas AOSP
+    implementation project(':aosp-compat')
+
+    // Memuat file .jar dan .aar dari folder app/libs/
+    implementation fileTree(dir: 'libs', include: ['*.jar', '*.aar'])
 
     // AndroidX & Material Core
     implementation 'androidx.core:core-ktx:1.13.1'
