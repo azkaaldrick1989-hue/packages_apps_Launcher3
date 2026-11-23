@@ -31,6 +31,8 @@ jobs:
           find res quickstep/res -type f -name "*.xml" -exec sed -i -E \
             -e 's/@\*?androidprv:color\/shade_panel_/@color\/shade_panel_/g' \
             -e 's/@\*?android:color\/system_/@color\/system_/g' \
+            -e 's/@\*?android:color\/customColorSurfaceEffect/@color\/customColorSurfaceEffect/g' \
+            -e 's/@\*?android:color\/materialColor/@color\/materialColor/g' \
             -e 's/@\*?android:dimen\/taskbar_stashed_size/@dimen\/taskbar_stashed_size/g' {} +
 
       - name: Build with Gradle
