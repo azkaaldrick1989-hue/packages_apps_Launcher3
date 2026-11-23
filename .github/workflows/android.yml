@@ -30,8 +30,8 @@ jobs:
         run: |
           find res quickstep/res -type f -name "*.xml" -exec sed -i -E \
             -e 's/@\*?androidprv:color\/shade_panel_/@color\/shade_panel_/g' \
-            -e 's/@\*?android:color\/system_/@color\/system_/g' {} +
-          grep -rnE "shade_panel_|system_(error_dim|inverse_|palette_key_color_error|primary_dim|scrim|secondary_dim|shadow)" res quickstep/res || true
+            -e 's/@\*?android:color\/system_/@color\/system_/g' \
+            -e 's/@\*?android:dimen\/taskbar_stashed_size/@dimen\/taskbar_stashed_size/g' {} +
 
       - name: Build with Gradle
         run: gradle assembleQuickstepDebug --stacktrace
