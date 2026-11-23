@@ -104,13 +104,13 @@ class TransitionInfo(
 
     class Root(
         val displayId: Int = 0,
-        val leash: SurfaceControl = SurfaceControl(),
+        val leash: SurfaceControl = SurfaceControl.Builder().setName("stub-root").build(),
         val offset: Point = Point()
     )
 
     class Change(
         val container: WindowContainerToken? = null,
-        val leash: SurfaceControl = SurfaceControl()
+        val leash: SurfaceControl = SurfaceControl.Builder().setName("stub-change").build()
     ) {
         var parent: WindowContainerToken? = null
         var lastParent: WindowContainerToken? = null
