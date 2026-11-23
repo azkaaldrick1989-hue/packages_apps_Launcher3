@@ -26,8 +26,14 @@ jobs:
         with:
           gradle-version: '8.9'
 
+      - name: Patch private AOSP color references
+        run: |
+          find res quickstep/res -type f -name "*.xml" -exec sed -i \
+            -e 's/@\*androidprv:color\/shade_panel_/@color\/shade_panel_/g' \
+            -e 's/@\*android:color\/system_/@color\/system_/g' {} +
+
       - name: Build with Gradle
-        run: gradle assembleDebug --stacktrace
+        run: gradle assembleQuickstepDebug --stacktrace
 
       - name: Upload APK artifact
         if: always()
