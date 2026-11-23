@@ -1,94 +1,1723 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <!-- Shade & system fallback colors -->
-    <color name="shade_panel_bg">#CC1E1E1E</color>
-    <color name="shade_panel_fg">#FFFFFFFF</color>
-    <color name="shade_panel_scrim_color">#99000000</color>
-    <color name="system_error_dim_dark">#FF93000A</color>
-    <color name="system_error_dim_light">#FFFFDAD6</color>
-    <color name="system_inverse_on_surface_dark">#FF1A1C1E</color>
-    <color name="system_inverse_on_surface_light">#FFF1F0F4</color>
-    <color name="system_inverse_primary_dark">#FF0061A4</color>
-    <color name="system_inverse_primary_light">#FF9ECAFF</color>
-    <color name="system_inverse_surface_dark">#FFE2E2E6</color>
-    <color name="system_inverse_surface_light">#FF2F3033</color>
-    <color name="system_palette_key_color_error_dark">#FFDE3730</color>
-    <color name="system_palette_key_color_error_light">#FFDE3730</color>
-    <color name="system_primary_dim_dark">#FF74B8FF</color>
-    <color name="system_primary_dim_light">#FF00497D</color>
-    <color name="system_scrim_dark">#CC000000</color>
-    <color name="system_scrim_light">#66000000</color>
-    <color name="system_secondary_dim_dark">#FFB8C8DA</color>
-    <color name="system_secondary_dim_light">#FF3B4858</color>
-    <color name="system_shadow_dark">#66000000</color>
-    <color name="system_shadow_light">#33000000</color>
+    <color name="chip_hint_foreground_color">#fff</color>
+    <color name="chip_scrim_start_color">#39000000</color>
 
-    <!-- Monet / Material You palette fallbacks -->
-    <color name="system_accent1_0">#FFFFFFFF</color>
-    <color name="system_accent1_100">#FFD1E4FF</color>
-    <color name="system_accent1_200">#FFA6C8FF</color>
-    <color name="system_accent1_300">#FF6FA6FF</color>
-    <color name="system_accent1_600">#FF0061A4</color>
-    <color name="system_accent1_700">#FF00497D</color>
-    <color name="system_accent1_800">#FF003258</color>
-    <color name="system_accent1_900">#FF001D36</color>
+    <color name="all_apps_label_text">#61000000</color>
+    <color name="all_apps_label_text_dark">#61FFFFFF</color>
+    <color name="all_apps_prediction_row_separator">#3c000000</color>
+    <color name="all_apps_prediction_row_separator_dark">#3cffffff</color>
+    <color name="blur_shade_panel_fg">@androidprv:color/shade_panel_fg</color>
+    <color name="blur_shade_panel_bg">@androidprv:color/shade_panel_bg</color>
 
-    <color name="system_accent2_50">#FFF6FAFF</color>
-    <color name="system_accent2_100">#FFD8E2FF</color>
-    <color name="system_accent2_200">#FFBAC6EA</color>
-    <color name="system_accent2_600">#FF535E7B</color>
-    <color name="system_accent2_700">#FF3C4762</color>
-    <color name="system_accent2_800">#FF25314C</color>
+    <!-- Taskbar -->
+    <color name="taskbar_nav_icon_selection_ripple">#E0E0E0</color>
+    <color name="taskbar_nav_icon_light_color_on_home">#ffffff</color>
+    <!-- The dark navigation button color is only used in the rare cases that taskbar isn't drawing
+    its background and the underlying app has requested dark buttons. -->
+    <color name="taskbar_nav_icon_dark_color_on_home">#99000000</color>
+    <color name="taskbar_stashed_handle_light_color">#EBffffff</color>
+    <color name="taskbar_stashed_handle_dark_color">#99000000</color>
+    <color name="taskbar_handoff_suggestion_badge_background_color">#1A73E8</color>
 
-    <color name="system_accent3_100">#FFFFD8E4</color>
-    <color name="system_accent3_200">#FFFCB1C9</color>
+    <!-- Floating rotation button -->
+    <color name="floating_rotation_button_light_color">#ffffff</color>
+    <color name="floating_rotation_button_dark_color">#99000000</color>
 
-    <color name="system_neutral1_0">#FFFFFFFF</color>
-    <color name="system_neutral1_50">#FFFDFCFF</color>
-    <color name="system_neutral1_100">#FFF1F0F4</color>
-    <color name="system_neutral1_700">#FF44474E</color>
-    <color name="system_neutral1_900">#FF1A1C1E</color>
-    <color name="system_neutral1_1000">#FF000000</color>
+    <!-- Gesture navigation tutorial -->
+    <color name="gesture_tutorial_back_arrow_color">#FFFFFFFF</color>
 
-    <color name="system_neutral2_100">#FFE2E2E6</color>
-    <color name="system_neutral2_200">#FFDDE3EA</color>
-    <color name="system_neutral2_400">#FF8E9099</color>
-    <color name="system_neutral2_700">#FF41484D</color>
-    <color name="system_neutral2_800">#FF2B2F32</color>
+    <color name="gesture_tutorial_fake_wallpaper_color">#f9f9f9</color> <!-- White -->
+    <color name="gesture_tutorial_ripple_color">#A0C2F9</color> <!-- Light Blue -->
+    <color name="gesture_tutorial_fake_task_view_color">#6DA1FF</color> <!-- Light Blue -->
+    <!-- Must contrast gesture_tutorial_fake_wallpaper_color -->
+    <color name="gesture_tutorial_fake_previous_task_view_color">#3C4043</color> <!-- Gray -->
+    <color name="gesture_tutorial_taskbar_color">#E8EAED</color>
 
-    <!-- Material & Surface effect fallbacks -->
-    <color name="materialColorPrimary">#FF0061A4</color>
-    <color name="materialColorOnSurface">#FF1A1C1E</color>
-    <color name="customColorSurfaceEffect0">#FFFDFCFF</color>
-    <color name="customColorSurfaceEffect1">@color/system_accent1_100</color>
-    <color name="customColorSurfaceEffect2">@color/system_accent2_100</color>
-    <color name="customColorSurfaceEffect3">@color/system_accent3_100</color>
+    <!-- Mock hotseat -->
+    <color name="mock_app_icon">#BDC1C6</color>
+    <color name="mock_search_bar">#3C4043</color>
 
-    <color name="materialColorSurfaceContainerLow">#FFF7F2FA</color>
-    <color name="materialColorPrimaryContainer">#FFD1E4FF</color>
-    <color name="materialColorOnPrimaryContainer">#FF001D36</color>
-    <color name="materialColorSecondaryContainer">#FFD8E2FF</color>
-    <color name="materialColorOnSecondaryContainer">#FF111C2B</color>
-    <color name="materialColorTertiaryContainer">#FFFFD8E4</color>
-    <color name="materialColorOnTertiaryContainer">#FF31111D</color>
+    <!-- Mock conversation -->
+    <color name="mock_conversation_background">#f1f3f4</color>
+    <color name="mock_conversation_top_bar">#e8eaed</color>
+    <color name="mock_conversation_top_bar_item">#dadce0</color>
+    <color name="mock_conversation_sent_message">#bdc1c6</color>
+    <color name="mock_conversation_received_message">#e8eaed</color>
+    <color name="mock_conversation_message_input">#dadce0</color>
+    <color name="mock_conversation_profile_icon">#dadce0</color>
 
-    <color name="materialColorSurfaceContainer">#FFF3EDF7</color>
-    <color name="customColorSurfaceEffect0Fallback">#FFFDFCFF</color>
-    <attr name="disabledIconAlpha" format="float" />
+    <!-- Mock conversations list -->
+    <color name="mock_list_background">#dadce0</color>
+    <color name="mock_list_top_bar">#e8eaed</color>
+    <color name="mock_list_top_bar_item">#f8f9fa</color>
+    <color name="mock_list_profile_icon">#9aa0a6</color>
+    <color name="mock_list_preview_message">#bdc1c6</color>
+    <color name="mock_list_button">#bdc1c6</color>
 
-    <color name="materialColorSurfaceContainerLowest">#FFFFFFFF</color>
-    <color name="materialColorSurfaceContainerHigh">#FFECE6F0</color>
-    <color name="materialColorSurfaceContainerHighest">#FFE6E0E9</color>
-    <color name="materialColorSurfaceDim">#FFDED8E1</color>
-    <color name="materialColorSurfaceBright">#FFFEF7FF</color>
-    <color name="materialColorOutlineVariant">#FFCAC4D0</color>
-    <color name="materialColorSecondaryFixed">#FFD8E2FF</color>
-    <color name="materialColorOnSecondaryFixedVariant">#FF3B4858</color>
-    <color name="materialColorOnSurfaceVariant">#FF49454F</color>
+    <!-- Mock web page -->
+    <color name="mock_webpage_background">#f1f3f4</color>
+    <color name="mock_webpage_url_bar">#6e7175</color>
+    <color name="mock_webpage_url_bar_item">#9a9a9a</color>
+    <color name="mock_webpage_top_bar">#e8eaed</color>
+    <color name="mock_webpage_top_bar_item">#80868b</color>
+    <color name="mock_webpage_page_text">#bdc1c6</color>
+
+    <color name="all_set_page_background">@android:color/system_neutral1_50</color>
+
+    <!-- Lottie light theme colors. -->
+    <color name="lottie_blue400">#669df6</color>
+    <color name="lottie_blue600">#1a73e8</color>
+    <color name="lottie_green400">#5bb974</color>
+    <color name="lottie_green600">#1e8e3e</color>
+    <color name="lottie_grey200">#e8eaed</color>
+    <color name="lottie_grey600">#80868b</color>
+    <color name="lottie_grey700">#5f6368</color>
+    <color name="lottie_red600">#d93025</color>
+    <color name="lottie_yellow400">#fcc934</color>
+    <color name="lottie_yellow600">#f9ab00</color>
+
+    <!-- Turn on work apps button -->
+    <color name="work_turn_on_stroke">@color/materialColorPrimary</color>
+
+    <color name="nudge_pill_color1">#4285F4</color>
+    <color name="nudge_pill_color2">#7430E2</color>
+    <color name="nudge_pill_color3">#2A7EC8</color>
+    <color name="nudge_pill_color4">#2DB8BD</color>
+
+    <!-- Widget Picker -->
+    <color name="widget_picker_primary_surface_color_dark" android:featureFlag="com.android.launcher3.enable_widget_picker_blur">@android:color/transparent</color>
+    <color name="widget_picker_sheet_background_bottom_layer_dark" android:featureFlag="com.android.launcher3.enable_widget_picker_blur">@androidprv:color/shade_panel_scrim_color</color>
+    <color name="widget_picker_collapse_handle_color_dark" android:featureFlag="com.android.launcher3.enable_widget_picker_blur">@color/system_outline_dark</color>
+    <color name="widget_picker_title_color_dark" android:featureFlag="com.android.launcher3.enable_widget_picker_blur">@color/system_on_surface_dark</color>
+    <color name="widget_picker_description_color_dark" android:featureFlag="com.android.launcher3.enable_widget_picker_blur">@color/system_on_surface_variant_dark</color>
+    <color name="widget_picker_expand_icon_button_color_dark" android:featureFlag="com.android.launcher3.enable_widget_picker_blur">@color/system_on_surface_dark</color>
+    <color name="widget_picker_expand_icon_button_background_dark" android:featureFlag="com.android.launcher3.enable_widget_picker_blur">@color/customColorSurfaceEffect1</color>
+    <color name="widget_picker_expandable_list_items_background_dark" android:featureFlag="com.android.launcher3.enable_widget_picker_blur">@color/customColorSurfaceEffect2</color>
+    <color name="widget_picker_header_app_title_color_dark" android:featureFlag="com.android.launcher3.enable_widget_picker_blur">@color/system_on_surface_dark</color>
+    <color name="widget_picker_header_app_subtitle_color_dark" android:featureFlag="com.android.launcher3.enable_widget_picker_blur">@color/system_on_surface_dark</color>
+    <color name="widget_picker_clickable_list_header_background_dark" android:featureFlag="com.android.launcher3.enable_widget_picker_blur">@color/system_secondary_container_dark</color>
+    <color name="widget_picker_featured_header_icon_background_dark" android:featureFlag="com.android.launcher3.enable_widget_picker_blur">@color/system_on_primary_dark</color>
+    <color name="widget_picker_featured_header_icon_color_dark" android:featureFlag="com.android.launcher3.enable_widget_picker_blur">@color/system_primary_dark</color>
+    <color name="widget_picker_selected_header_app_title_color_dark" android:featureFlag="com.android.launcher3.enable_widget_picker_blur">@color/system_on_surface_dark</color>
+    <color name="widget_picker_selected_header_app_subtitle_color_dark" android:featureFlag="com.android.launcher3.enable_widget_picker_blur">@color/system_on_surface_dark</color>
+    <color name="widget_picker_no_widget_error_color_dark" android:featureFlag="com.android.launcher3.enable_widget_picker_blur">@color/system_on_surface_dark</color>
+    <color name="widget_picker_widgets_container_background_dark" android:featureFlag="com.android.launcher3.enable_widget_picker_blur">@color/customColorSurfaceEffect2</color>
+    <color name="widget_cell_title_color_dark" android:featureFlag="com.android.launcher3.enable_widget_picker_blur">@color/system_on_surface_dark</color>
+    <color name="widget_cell_subtitle_color_dark" android:featureFlag="com.android.launcher3.enable_widget_picker_blur">@color/system_on_surface_dark</color>
+    <color name="widget_picker_add_button_text_color_dark" android:featureFlag="com.android.launcher3.enable_widget_picker_blur">@color/system_on_primary_dark</color>
+    <color name="widget_picker_add_button_background_color_dark" android:featureFlag="com.android.launcher3.enable_widget_picker_blur">@color/system_primary_dark</color>
+    <color name="widget_picker_preview_placeholder_background_dark" android:featureFlag="com.android.launcher3.enable_widget_picker_blur">@color/system_secondary_container_dark</color>
+    <color name="widget_picker_preview_placeholder_content_dark" android:featureFlag="com.android.launcher3.enable_widget_picker_blur">@color/system_on_secondary_container_dark</color>
+    <color name="widget_picker_search_bar_background_color_dark" android:featureFlag="com.android.launcher3.enable_widget_picker_blur">@color/customColorSurfaceEffect1</color>
+    <color name="widget_picker_search_text_color_dark" android:featureFlag="com.android.launcher3.enable_widget_picker_blur">@color/system_on_surface_dark</color>
+    <color name="widget_picker_search_cursor_color_dark" android:featureFlag="com.android.launcher3.enable_widget_picker_blur">@color/system_on_surface_dark</color>
+    <color name="widget_picker_focus_outline_color_dark" android:featureFlag="com.android.launcher3.enable_widget_picker_blur">@color/system_secondary_dark</color>
+
+    <color name="widget_picker_primary_surface_color_light" android:featureFlag="com.android.launcher3.enable_widget_picker_blur">@android:color/transparent</color>
+    <color name="widget_picker_sheet_background_bottom_layer_light" android:featureFlag="com.android.launcher3.enable_widget_picker_blur">@androidprv:color/shade_panel_scrim_color</color>
+    <color name="widget_picker_collapse_handle_color_light" android:featureFlag="com.android.launcher3.enable_widget_picker_blur">@color/system_outline_light</color>
+    <color name="widget_picker_title_color_light" android:featureFlag="com.android.launcher3.enable_widget_picker_blur">@color/system_on_surface_light</color>
+    <color name="widget_picker_description_color_light" android:featureFlag="com.android.launcher3.enable_widget_picker_blur" tools:ignore="DuplicateDefinition">@color/system_on_surface_variant_light</color>
+    <color name="widget_picker_expand_icon_button_color_light" android:featureFlag="com.android.launcher3.enable_widget_picker_blur">@color/system_on_surface_light</color>
+    <color name="widget_picker_expand_icon_button_background_light" android:featureFlag="com.android.launcher3.enable_widget_picker_blur">@color/customColorSurfaceEffect1</color>
+    <color name="widget_picker_expandable_list_items_background_light" android:featureFlag="com.android.launcher3.enable_widget_picker_blur">@color/customColorSurfaceEffect2</color>
+    <color name="widget_picker_header_app_title_color_light" android:featureFlag="com.android.launcher3.enable_widget_picker_blur">@color/system_on_surface_light</color>
+    <color name="widget_picker_header_app_subtitle_color_light" android:featureFlag="com.android.launcher3.enable_widget_picker_blur">@color/system_on_surface_light</color>
+    <color name="widget_picker_clickable_list_header_background_light" android:featureFlag="com.android.launcher3.enable_widget_picker_blur">@color/system_secondary_container_light</color>
+    <color name="widget_picker_featured_header_icon_background_light" android:featureFlag="com.android.launcher3.enable_widget_picker_blur">@color/system_on_primary_light</color>
+    <color name="widget_picker_featured_header_icon_color_light" android:featureFlag="com.android.launcher3.enable_widget_picker_blur">@color/system_primary_light</color>
+    <color name="widget_picker_selected_header_app_title_color_light" android:featureFlag="com.android.launcher3.enable_widget_picker_blur">@color/system_on_surface_light</color>
+    <color name="widget_picker_selected_header_app_subtitle_color_light" android:featureFlag="com.android.launcher3.enable_widget_picker_blur">@color/system_on_surface_light</color>
+    <color name="widget_picker_no_widget_error_color_light" android:featureFlag="com.android.launcher3.enable_widget_picker_blur">@color/system_on_surface_light</color>
+    <color name="widget_picker_widgets_container_background_light" android:featureFlag="com.android.launcher3.enable_widget_picker_blur">@color/customColorSurfaceEffect2</color>
+    <color name="widget_cell_title_color_light" android:featureFlag="com.android.launcher3.enable_widget_picker_blur">@color/system_on_surface_light</color>
+    <color name="widget_cell_subtitle_color_light" android:featureFlag="com.android.launcher3.enable_widget_picker_blur">@color/system_on_surface_light</color>
+    <color name="widget_picker_add_button_text_color_light" android:featureFlag="com.android.launcher3.enable_widget_picker_blur">@color/system_on_primary_light</color>
+    <color name="widget_picker_add_button_background_color_light" android:featureFlag="com.android.launcher3.enable_widget_picker_blur">@color/system_primary_light</color>
+    <color name="widget_picker_preview_placeholder_background_light" android:featureFlag="com.android.launcher3.enable_widget_picker_blur">@color/system_secondary_container_light</color>
+    <color name="widget_picker_preview_placeholder_content_light" android:featureFlag="com.android.launcher3.enable_widget_picker_blur">@color/system_on_secondary_container_light</color>
+    <color name="widget_picker_search_bar_background_color_light" android:featureFlag="com.android.launcher3.enable_widget_picker_blur">@color/customColorSurfaceEffect1</color>
+    <color name="widget_picker_search_text_color_light" android:featureFlag="com.android.launcher3.enable_widget_picker_blur">@color/system_on_surface_light</color>
+    <color name="widget_picker_search_cursor_color_light" android:featureFlag="com.android.launcher3.enable_widget_picker_blur">@color/system_on_surface_light</color>
+    <color name="widget_picker_focus_outline_color_light" android:featureFlag="com.android.launcher3.enable_widget_picker_blur">@color/system_secondary_light</color>
+
 
     <!-- Private AOSP / SystemUI dimen fallbacks -->
-    <dimen name="floating_dismiss_icon_size">24dp</dimen>
-    <dimen name="floating_dismiss_background_size">48dp</dimen>
-    <dimen name="desktop_windowing_freeform_rounded_corner_radius">16dp</dimen>
-    
+    <!-- For screens without rounded corners -->
+    <dimen name="task_corner_radius_small">2dp</dimen>
+    <!-- For Launchers that want to override the default dialog corner radius -->
+    <dimen name="task_corner_radius_override">-1dp</dimen>
+
+    <!--  Task Menu View  -->
+    <dimen name="task_menu_corner_radius">26dp</dimen>
+    <dimen name="task_menu_item_corner_radius">4dp</dimen>
+    <dimen name="task_menu_spacing">2dp</dimen>
+    <dimen name="task_menu_width_grid">216dp</dimen>
+    <dimen name="task_menu_horizontal_padding">8dp</dimen>
+    <dimen name="overview_proactive_row_height">48dp</dimen>
+    <dimen name="overview_proactive_row_bottom_margin">16dp</dimen>
+
+    <dimen name="overview_minimum_next_prev_size">50dp</dimen>
+
+    <!--  Overflown Apps Container View  -->
+    <!--  The padding of the container view and the space between the child app icons -->
+    <dimen name="overflown_apps_container_spacing">8dp</dimen>
+
+    <!--  Overview Task Views  -->
+    <!--  The thumbnail uses up to this much of the total screen height/width in Overview -->
+    <item name="overview_max_scale" format="float" type="dimen">0.7</item>
+    <!--  A touch target for icons, sometimes slightly larger than the icons themselves  -->
+    <dimen name="task_thumbnail_icon_size">48dp</dimen>
+    <!--  The icon size for the focused task, placed in center of touch target  -->
+    <dimen name="task_thumbnail_icon_drawable_size">44dp</dimen>
+    <!--  The splash icon size on in Overview when a task is settled in the list -->
+    <dimen name="task_thumbnail_splash_icon_size">52dp</dimen>
+    <!--  The lock icon size in Overview when a task belongs to a locked package -->
+    <dimen name="task_thumbnail_app_lock_icon_size">36dp</dimen>
+    <!--  The space under the focused task icon  -->
+    <dimen name="overview_task_margin">16dp</dimen>
+    <!--  The horizontal space between tasks  -->
+    <dimen name="overview_page_spacing">16dp</dimen>
+    <!--  The collapsed max width of the icon menu text  -->
+    <dimen name="task_thumbnail_icon_menu_text_collapsed_max_width">86dp</dimen>
+    <!--  The expanded max width of the icon menu text  -->
+    <dimen name="task_thumbnail_icon_menu_text_expanded_max_width">118dp</dimen>
+    <!--  The size of the icon menu text  -->
+    <dimen name="task_thumbnail_icon_menu_text_size">14sp</dimen>
+    <!--  The width of the thumbnail icon menu when collapsed (for non-split tasks)  -->
+    <dimen name="task_thumbnail_icon_menu_collapsed_width">156dp</dimen>
+    <!--  The width of the thumbnail icon menu when expanded -->
+    <dimen name="task_thumbnail_icon_menu_expanded_width">216dp</dimen>
+    <!--  The height of the thumbnail icon menu when collapsed  -->
+    <dimen name="task_thumbnail_icon_menu_collapsed_height">36dp</dimen>
+    <!--  The height of the thumbnail icon menu when expanded -->
+    <dimen name="task_thumbnail_icon_menu_expanded_height">52dp</dimen>
+    <!--  The margin at the top/start of the task icon menu when expanded  -->
+    <dimen name="task_thumbnail_icon_menu_expanded_top_start_margin">4dp</dimen>
+    <!--  The margin at the start of the background when collapsed  -->
+    <dimen name="task_thumbnail_icon_menu_background_margin_top_start">8dp</dimen>
+    <!--  The margin between the app name + app icon and app name + arrow icon when collapsed  -->
+    <dimen name="task_thumbnail_icon_menu_app_name_margin_horizontal_collapsed">8dp</dimen>
+    <!--  The margin between the app name + app icon and app name + arrow icon when expanded  -->
+    <dimen name="task_thumbnail_icon_menu_app_name_margin_horizontal_expanded">12dp</dimen>
+    <!--  The gap at the top of the task icon menu when expanded  -->
+    <dimen name="task_thumbnail_icon_menu_expanded_gap">2dp</dimen>
+    <!--  The margin at the start of the task icon view in the icon menu  -->
+    <dimen name="task_thumbnail_icon_view_start_margin">6dp</dimen>
+    <!--  The space around the task icon arrow within the icon menu  -->
+    <dimen name="task_thumbnail_icon_menu_arrow_margin">8dp</dimen>
+    <!--  The size for the icon menu arrow -->
+    <dimen name="task_thumbnail_icon_menu_arrow_size">24dp</dimen>
+    <!--  The collapsed size for the icon menu icon -->
+    <dimen name="task_thumbnail_icon_menu_app_icon_collapsed_size">24dp</dimen>
+    <!--  The expanded icon size for the icon menu -->
+    <dimen name="task_thumbnail_icon_menu_app_icon_expanded_size">32dp</dimen>
+    <!--  The size of the icon menu's icon touch target  -->
+    <dimen name="task_thumbnail_icon_menu_drawable_touch_size">44dp</dimen>
+    <dimen name="task_thumbnail_icon_menu_elevation">4dp</dimen>
+    <dimen name="app_chip_round_corner_radius">28dp</dimen>
+    <!--  The size of the text fading horizontally -->
+    <dimen name="task_thumbnail_icon_menu_text_fading_size">20dp</dimen>
+    <!--  The size of the task thumbnail header  -->
+    <dimen name="task_thumbnail_header_padding_top_bottom">6dp</dimen>
+    <dimen name="task_thumbnail_header_padding_start_end">12dp</dimen>
+    <dimen name="task_thumbnail_header_margin_between_views">8dp</dimen>
+    <dimen name="task_thumbnail_header_icon_size">18dp</dimen>
+    <dimen name="task_header_close_button_size">20dp</dimen>
+    <dimen name="task_thumbnail_header_close_button_hit_rect_size">48dp</dimen>
+    <dimen name="task_thumbnail_header_round_corner_radius">
+        @dimen/desktop_windowing_freeform_rounded_corner_radius</dimen>
+    <!-- The size for non-overlapping layout in desktop tile -->
+    <dimen name="desktop_vertical_padding_between_tasks">24dp</dimen>
+    <dimen name="desktop_horizontal_padding_between_tasks">24dp</dimen>
+    <dimen name="desktop_top_bottom_margin_one_row">72dp</dimen>
+    <dimen name="desktop_left_right_margin_one_row">72dp</dimen>
+    <dimen name="desktop_top_margin_multi_rows">72dp</dimen>
+    <dimen name="desktop_bottom_margin_multi_rows">24dp</dimen>
+    <dimen name="desktop_left_right_margin_multi_rows">24dp</dimen>
+    <dimen name="desktop_min_task_width">72dp</dimen>
+    <dimen name="task_hover_focus_border_width">3dp</dimen>
+    <dimen name="task_hover_focus_offset_size">2dp</dimen>
+    <integer name="desktop_layout_max_rows">5</integer>
+    <!-- The length of the fading edge (gradient) of the task header title -->
+    <dimen name="task_header_title_fading_edge_length">28dp</dimen>
+
+    <!--  How much a task being dragged for dismissal can undershoot the origin when dragged back to its start position.  -->
+    <dimen name="task_dismiss_max_undershoot">25dp</dimen>
+    <!--  How much a task should be dragged from the origin before it detaches (or reattaches).  -->
+    <dimen name="task_dismiss_detach_threshold">72dp</dimen>
+    <!-- How much the last desk can be dragged for dismissal before it resists and falls back to its start position. -->
+    <dimen name="task_dismiss_max_attach_overshoot">120dp</dimen>
+
+    <dimen name="task_icon_cache_default_icon_size">72dp</dimen>
+    <item name="overview_modal_max_scale" format="float" type="dimen">1.1</item>
+
+    <dimen name="task_dismiss_button_width">24dp</dimen>
+    <dimen name="task_dismiss_button_padding">4dp</dimen>
+    <dimen name="task_dismiss_button_margin">4dp</dimen>
+
+    <!-- Overrideable in overlay that provides the Overview Actions. -->
+    <dimen name="overview_actions_top_margin">24dp</dimen>
+    <dimen name="overview_actions_height">48dp</dimen>
+    <dimen name="overview_actions_button_spacing">16dp</dimen>
+    <dimen name="overview_actions_button_radius">28dp</dimen>
+    <dimen name="overview_actions_button_vertical_padding">10dp</dimen>
+    <dimen name="overview_actions_button_horizontal_padding">16dp</dimen>
+
+    <!-- These speeds are in dp/s -->
+    <dimen name="max_task_dismiss_drag_velocity">2.25dp</dimen>
+    <dimen name="default_task_dismiss_drag_velocity">1.5dp</dimen>
+    <dimen name="default_task_dismiss_drag_velocity_grid">1dp</dimen>
+    <dimen name="default_task_dismiss_drag_velocity_grid_focus_task">5dp</dimen>
+
+    <dimen name="recents_clear_all_deadzone_vertical_margin">70dp</dimen>
+    <dimen name="recents_clear_all_outline_radius">24dp</dimen>
+    <dimen name="recents_clear_all_outline_padding">2dp</dimen>
+
+    <!-- Recents add desktop button -->
+    <dimen name="add_desktop_button_size">56dp</dimen>
+    <dimen name="add_desktop_button_outline_padding">2dp</dimen>
+
+    <!-- Recents App Chip -->
+    <dimen name="app_chip_keyboard_border_width">3dp</dimen>
+
+    <!-- The speed in dp/s at which the user needs to be scrolling in recents such that we start
+             loading full resolution screenshots. -->
+    <dimen name="recents_fast_fling_velocity">600dp</dimen>
+
+    <!-- These speeds are in dp / ms -->
+    <dimen name="motion_pause_detector_speed_very_slow">0.0285dp</dimen>
+    <dimen name="motion_pause_detector_speed_slow">0.15dp</dimen>
+    <dimen name="motion_pause_detector_speed_somewhat_fast">0.285dp</dimen>
+    <dimen name="motion_pause_detector_speed_trackpad_somewhat_fast">0.7dp</dimen>
+    <dimen name="motion_pause_detector_speed_fast">1.4dp</dimen>
+    <dimen name="motion_pause_detector_min_displacement_from_app">36dp</dimen>
+    <!-- Note: gesture_nav_window_attach_threshold must always be greater than 0, and smaller than
+               motion_pause_detector_min_displacement_from_app  -->
+    <dimen name="gesture_nav_window_attach_threshold">35.99dp</dimen>
+    <dimen name="quickstep_fling_threshold_speed">0.5dp</dimen>
+
+    <!-- Launcher app transition -->
+    <dimen name="closing_window_trans_y">115dp</dimen>
+    <dimen name="closing_freeform_window_trans_y">36dp</dimen>
+
+    <dimen name="quick_switch_scaling_scroll_threshold">100dp</dimen>
+
+    <dimen name="recents_empty_message_text_size">14sp</dimen>
+    <dimen name="recents_empty_message_text_padding">32dp</dimen>
+    <dimen name="recents_empty_message_drawable_padding">16dp</dimen>
+    <dimen name="recents_empty_message_icon_size">60dp</dimen>
+    <dimen name="recents_empty_message_background_size">190dp</dimen>
+    <dimen name="recents_empty_message_background_size_large">288dp</dimen>
+
+    <dimen name="max_shadow_radius">0dp</dimen>
+
+    <!-- Total space (start + end) between the task card and the edge of the screen
+         in various configurations -->
+    <dimen name="task_card_menu_option_vertical_padding">16dp</dimen>
+    <dimen name="task_menu_edge_padding">8dp</dimen>
+    <dimen name="task_card_margin">8dp</dimen>
+    <dimen name="task_card_menu_shadow_height">3dp</dimen>
+    <dimen name="task_menu_option_start_margin">16dp</dimen>
+    <dimen name="task_menu_option_text_start_margin">18dp</dimen>
+    <!-- Copied from framework resource:
+       docked_stack_divider_thickness - 2 * docked_stack_divider_insets -->
+    <dimen name="multi_window_task_divider_size">10dp</dimen>
+
+    <!-- Assistant Gestures -->
+    <!-- Distance from the vertical edges of the screen in which assist gestures are recognized -->
+    <dimen name="gestures_assistant_width">48dp</dimen>
+    <dimen name="gestures_assistant_drag_threshold">55dp</dimen>
+    <dimen name="gestures_assistant_fling_threshold">55dp</dimen>
+
+    <!-- One-Handed Mode -->
+    <!-- Threshold for draging distance to enable one-handed mode -->
+    <dimen name="gestures_onehanded_drag_threshold">20dp</dimen>
+
+    <!-- Distance to move elements when swiping up to go home from launcher -->
+    <dimen name="home_pullback_distance">28dp</dimen>
+
+    <!-- Distance to move the tasks when swiping up while the device is locked -->
+    <dimen name="device_locked_y_offset">-80dp</dimen>
+
+    <!-- Overscroll Gesture -->
+    <dimen name="gestures_overscroll_fling_threshold">40dp</dimen>
+    <dimen name="gestures_overscroll_active_threshold">80dp</dimen>
+    <dimen name="gestures_overscroll_finish_threshold">136dp</dimen>
+
+    <!-- Tips Gesture Tutorial -->
+    <dimen name="gesture_tutorial_feedback_margin_start_end">8dp</dimen>
+    <dimen name="gesture_tutorial_tablet_feedback_margin_start_end">140dp</dimen>
+    <dimen name="gesture_tutorial_feedback_margin_top">16dp</dimen>
+    <dimen name="gesture_tutorial_tablet_feedback_margin_top">24dp</dimen>
+    <dimen name="gesture_tutorial_multi_row_task_view_spacing">72dp</dimen>
+    <dimen name="gesture_tutorial_small_task_view_corner_radius">18dp</dimen>
+    <dimen name="gesture_tutorial_mock_taskbar_height">80dp</dimen>
+    <dimen name="gesture_tutorial_back_gesture_exiting_app_margin">8dp</dimen>
+    <dimen name="gesture_tutorial_back_gesture_end_corner_radius">36dp</dimen>
+
+    <!-- Gesture Tutorial menu page -->
+    <dimen name="gesture_tutorial_menu_padding_horizontal">24dp</dimen>
+    <dimen name="gesture_tutorial_menu_padding_top">31dp</dimen>
+    <dimen name="gesture_tutorial_menu_padding_bottom">24dp</dimen>
+    <dimen name="gesture_tutorial_menu_button_height">0dp</dimen>
+    <dimen name="gesture_tutorial_menu_button_spacing">16dp</dimen>
+    <dimen name="gesture_tutorial_menu_button_radius">28dp</dimen>
+    <dimen name="gesture_tutorial_menu_done_button_top_spacing">0dp</dimen>
+    <dimen name="gesture_tutorial_menu_back_shape_bottom_margin">0dp</dimen>
+    <dimen name="gesture_tutorial_menu_done_button_spacing">72dp</dimen>
+    <dimen name="gesture_tutorial_done_button_width">142dp</dimen>
+    <dimen name="gesture_tutorial_done_button_padding">16dp</dimen>
+
+    <!-- Gesture Tutorial mock conversations -->
+    <dimen name="gesture_tutorial_message_icon_size">44dp</dimen>
+    <dimen name="gesture_tutorial_message_icon_corner_radius">100dp</dimen>
+    <dimen name="gesture_tutorial_message_input_margin_top">36dp</dimen>
+    <dimen name="gesture_tutorial_message_large_margin_bottom">32dp</dimen>
+    <dimen name="gesture_tutorial_message_small_margin_bottom">4dp</dimen>
+    <dimen name="gesture_tutorial_message_padding_start">26dp</dimen>
+    <dimen name="gesture_tutorial_message_padding_end">18dp</dimen>
+    <dimen name="gesture_tutorial_top_bar_margin_start">34dp</dimen>
+    <dimen name="gesture_tutorial_top_bar_margin_end">211dp</dimen>
+    <dimen name="gesture_tutorial_top_bar_button_margin_end">24dp</dimen>
+    <dimen name="gesture_tutorial_conversation_bottom_padding">66dp</dimen>
+    <integer name="gesture_tutorial_extra_messages_visibility">0</integer> <!-- VISIBLE -->
+    <dimen name="gesture_tutorial_message_margin_start">124dp</dimen>
+    <dimen name="gesture_tutorial_reply_margin_end">144dp</dimen>
+    <dimen name="gesture_tutorial_input_margin_start">34dp</dimen>
+    <dimen name="gesture_tutorial_input_margin_end">24dp</dimen>
+    <dimen name="gesture_tutorial_tablet_message_padding_start_end">126dp</dimen>
+    <dimen name="gesture_tutorial_tablet_message_1_margin">245dp</dimen>
+    <dimen name="gesture_tutorial_tablet_reply_1_margin">241dp</dimen>
+    <dimen name="gesture_tutorial_tablet_message_2_margin">401dp</dimen>
+    <dimen name="gesture_tutorial_tablet_message_3_margin">245dp</dimen>
+    <dimen name="gesture_tutorial_tablet_reply_2_margin">273dp</dimen>
+
+    <!-- Gesture Tutorial mock conversation lists -->
+    <dimen name="gesture_tutorial_conversation_icon_size">56dp</dimen>
+    <dimen name="gesture_tutorial_conversation_icon_corner_radius">100dp</dimen>
+    <dimen name="gesture_tutorial_conversation_list_padding_top">28dp</dimen>
+    <dimen name="gesture_tutorial_conversation_line_padding_start">20dp</dimen>
+    <dimen name="gesture_tutorial_conversation_line_1_margin_end">217dp</dimen>
+    <dimen name="gesture_tutorial_conversation_line_2_margin_end">142dp</dimen>
+    <dimen name="gesture_tutorial_conversation_line_3_margin_end">190dp</dimen>
+    <dimen name="gesture_tutorial_conversation_line_4_margin_end">171dp</dimen>
+    <dimen name="gesture_tutorial_conversation_line_5_margin_end">198dp</dimen>
+    <dimen name="gesture_tutorial_conversation_line_6_margin_end">79dp</dimen>
+    <dimen name="gesture_tutorial_conversation_line_7_margin_end">174dp</dimen>
+    <dimen name="gesture_tutorial_conversation_line_8_margin_end">117dp</dimen>
+    <dimen name="gesture_tutorial_tablet_conversation_line_6_margin_end">65dp</dimen>
+    <dimen name="gesture_tutorial_tablet_conversation_line_8_margin_end">132dp</dimen>
+    <dimen name="gesture_tutorial_tablet_conversation_line_10_margin_end">161dp</dimen>
+    <integer name="gesture_tutorial_extra_conversations_visibility">0</integer> <!-- VISIBLE -->
+    <dimen name="gesture_tutorial_mock_button_margin_end">24dp</dimen>
+    <dimen name="gesture_tutorial_mock_button_margin_bottom">66dp</dimen>
+
+    <!-- Gesture Tutorial mock hotseats -->
+    <dimen name="gesture_tutorial_hotseat_width">-1px</dimen> <!-- match_parent -->
+    <dimen name="gesture_tutorial_hotseat_height">-2px</dimen> <!-- wrap_content -->
+    <dimen name="gesture_tutorial_hotseat_padding_start_end">26dp</dimen>
+    <dimen name="gesture_tutorial_hotseat_icon_size">60dp</dimen>
+    <dimen name="gesture_tutorial_hotseat_icon_corner_radius">100dp</dimen>
+    <dimen name="gesture_tutorial_hotseat_search_height">50dp</dimen>
+    <dimen name="gesture_tutorial_hotseat_search_corner_radius">100dp</dimen>
+    <dimen name="gesture_tutorial_hotseat_icon_search_margin">36dp</dimen>
+
+    <!-- Gesture Tutorial mock webpages -->
+    <dimen name="gesture_tutorial_webpage_padding_top">32dp</dimen>
+    <dimen name="gesture_tutorial_webpage_large_margin_top">24dp</dimen>
+    <dimen name="gesture_tutorial_webpage_small_margin_top">8dp</dimen>
+    <dimen name="gesture_tutorial_webpage_large_corner_radius">22dp</dimen>
+    <dimen name="gesture_tutorial_webpage_medium_corner_radius">8dp</dimen>
+    <dimen name="gesture_tutorial_webpage_small_corner_radius">4dp</dimen>
+    <dimen name="gesture_tutorial_webpage_large_line_height">36dp</dimen>
+    <dimen name="gesture_tutorial_webpage_small_line_height">22dp</dimen>
+    <dimen name="gesture_tutorial_webpage_url_margin_start_end">16dp</dimen>
+    <dimen name="gesture_tutorial_webpage_top_bar_button_margin_start">24dp</dimen>
+    <dimen name="gesture_tutorial_webpage_top_bar_margin_start">97dp</dimen>
+    <dimen name="gesture_tutorial_webpage_top_bar_margin_end">97dp</dimen>
+    <dimen name="gesture_tutorial_webpage_line_1_margin_end">126dp</dimen>
+    <dimen name="gesture_tutorial_webpage_line_2_margin_end">64dp</dimen>
+    <dimen name="gesture_tutorial_webpage_line_3_margin_end">151dp</dimen>
+    <dimen name="gesture_tutorial_webpage_block_margin_end">24dp</dimen>
+    <integer name="gesture_tutorial_webpage_extra_lines_visibility">0</integer> <!-- VISIBLE -->
+
+    <!-- Gesture Tutorial mock taskbar -->
+    <dimen name="gesture_tutorial_taskbar_icon_size">52dp</dimen>
+    <dimen name="gesture_tutorial_taskbar_all_apps_mini_size">7dp</dimen>
+    <dimen name="gesture_tutorial_taskbar_icon_corner_radius">100dp</dimen>
+    <dimen name="gesture_tutorial_taskbar_corner_radius">100dp</dimen>
+    <dimen name="gesture_tutorial_taskbar_padding">12dp</dimen>
+    <dimen name="gesture_tutorial_taskbar_icon_spacing">24dp</dimen>
+    <dimen name="gesture_tutorial_taskbar_margin_bottom">24dp</dimen>
+
+    <!-- All Set page -->
+    <dimen name="allset_page_padding_horizontal">40dp</dimen>
+    <dimen name="allset_page_expressive_padding_horizontal">40dp</dimen>
+    <dimen name="allset_page_allset_text_size">36sp</dimen>
+    <dimen name="allset_page_swipe_up_text_size">14sp</dimen>
+    <dimen name="allset_page_swipe_up_text_size_expressive">16sp</dimen>
+
+    <dimen name="allset_title_margin_top">24dp</dimen>
+    <dimen name="allset_title_icon_margin_top">32dp</dimen>
+    <dimen name="allset_subtitle_margin_top">24dp</dimen>
+    <dimen name="allset_subtitle_width_max">348dp</dimen>
+    <dimen name="allset_swipe_up_shift">10dp</dimen>
+    <dimen name="allset_hint_margin_bottom">24dp</dimen>
+    <dimen name="allset_arrow_margin_bottom">57dp</dimen>
+
+    <!-- All Apps Education tutorial -->
+    <dimen name="swipe_edu_padding">8dp</dimen>
+    <dimen name="swipe_edu_circle_size">64dp</dimen>
+    <dimen name="swipe_edu_width">80dp</dimen>
+    <dimen name="swipe_edu_max_height">184dp</dimen>
+
+    <!-- Taskbar All Apps custom height parameters -->
+    <!-- This multiple will make the all apps a multiple taller as compared to its width on CD.-->
+    <item name="taskbar_all_apps_connected_display_custom_height_multiple" format="float" type="dimen">1.2</item>
+    <!-- If the desired height of all apps on CD is taller that 80% of the total height of display
+         then show a fullscreen all apps instead. -->
+    <item name="taskbar_all_apps_connected_display_custom_height_limit" format="float" type="dimen">0.8</item>
+
+    <dimen name="chip_hint_border_width">1dp</dimen>
+    <dimen name="chip_hint_corner_radius">20dp</dimen>
+    <dimen name="chip_hint_outer_padding">20dp</dimen>
+    <dimen name="chip_hint_start_padding">10dp</dimen>
+    <dimen name="chip_hint_end_padding">12dp</dimen>
+    <dimen name="chip_hint_horizontal_margin">20dp</dimen>
+    <dimen name="chip_hint_vertical_offset">16dp</dimen>
+    <dimen name="chip_hint_elevation">2dp</dimen>
+    <dimen name="chip_icon_size">16dp</dimen>
+    <dimen name="chip_text_height">26dp</dimen>
+    <dimen name="chip_text_top_padding">4dp</dimen>
+    <dimen name="chip_text_start_padding">10dp</dimen>
+    <dimen name="chip_text_size">14sp</dimen>
+
+    <dimen name="all_apps_prediction_row_divider_height">17dp</dimen>
+    <dimen name="all_apps_label_top_padding">16dp</dimen>
+    <dimen name="all_apps_label_bottom_padding">8dp</dimen>
+    <dimen name="all_apps_label_text_size">14sp</dimen>
+
+    <!-- Minimum distance to swipe to trigger accessibility gesture -->
+    <dimen name="accessibility_gesture_min_swipe_distance">80dp</dimen>
+
+    <!-- The maximum width of the navigation bar ripples. -->
+    <dimen name="key_button_ripple_max_width">95dp</dimen>
+
+    <dimen name="rounded_corner_content_padding">0dp</dimen>
+
+    <dimen name="navigation_key_padding">0dp</dimen>
+
+    <!-- Floating rotation button -->
+    <dimen name="floating_rotation_button_diameter">52dp</dimen>
+    <dimen name="floating_rotation_button_min_margin">20dp</dimen>
+    <dimen name="floating_rotation_button_taskbar_left_margin">20dp</dimen>
+    <dimen name="floating_rotation_button_taskbar_bottom_margin">10dp</dimen>
+
+    <!-- Copied from frameworks/base/packages/SystemUI -->
+    <dimen name="navigation_home_handle_width">108dp</dimen>
+
+    <!-- Taskbar -->
+    <dimen name="taskbar_size">@*android:dimen/taskbar_frame_height</dimen>
+    <dimen name="taskbar_icon_min_touch_size">48dp</dimen>
+    <!-- Note that this applies to both sides of all icons, so visible space is double this. -->
+    <dimen name="taskbar_icon_spacing">12dp</dimen>
+    <dimen name="taskbar_icon_drag_icon_size">54dp</dimen>
+    <dimen name="taskbar_folder_margin">16dp</dimen>
+    <dimen name="taskbar_contextual_button_padding">16dp</dimen>
+    <dimen name="taskbar_contextual_button_width">88dp</dimen>
+    <dimen name="taskbar_contextual_button_suw_width">32dp</dimen>
+    <dimen name="taskbar_contextual_padding_top">8dp</dimen>
+    <dimen name="taskbar_nav_buttons_size">44dp</dimen>
+    <dimen name="taskbar_split_instructions_margin">48dp</dimen>
+    <dimen name="taskbar_ime_switcher_button_margin_start">40dp</dimen>
+    <dimen name="taskbar_suw_insets">48dp</dimen>
+    <dimen name="taskbar_suw_frame">96dp</dimen>
+    <dimen name="taskbar_hotseat_nav_spacing">24dp</dimen>
+    <dimen name="taskbar_contextual_buttons_size">35dp</dimen>
+    <dimen name="taskbar_stashed_size">@*android:dimen/taskbar_stashed_size</dimen>
+    <dimen name="taskbar_stashed_handle_width">220dp</dimen>
+    <dimen name="taskbar_stashed_small_screen">108dp</dimen>
+    <dimen name="taskbar_unstash_input_area">316dp</dimen>
+    <dimen name="taskbar_stashed_handle_height">4dp</dimen>
+    <dimen name="taskbar_nudge_pill_height">24dp</dimen>
+    <dimen name="taskbar_nudge_pill_width">108dp</dimen>
+    <dimen name="taskbar_nudge_glow_radius_percent">200%</dimen>
+    <dimen name="taskbar_stashed_screen_edge_hover_deadzone_height">10dp</dimen>
+    <dimen name="taskbar_stashed_below_hover_deadzone_height">1dp</dimen>
+    <dimen name="taskbar_edu_horizontal_margin">112dp</dimen>
+    <dimen name="taskbar_nav_buttons_width_kids">88dp</dimen>
+    <dimen name="taskbar_nav_buttons_height_kids">40dp</dimen>
+    <dimen name="taskbar_nav_buttons_corner_radius_kids">40dp</dimen>
+    <dimen name="taskbar_back_button_left_margin_kids">48dp</dimen>
+    <dimen name="taskbar_home_button_left_margin_kids">48dp</dimen>
+    <dimen name="taskbar_icon_size_kids">32dp</dimen>
+    <dimen name="taskbar_all_apps_search_button_translation_x_offset">6dp</dimen>
+    <dimen name="taskbar_all_apps_search_button_translation_x_offset_for_expressive_theme">0dp</dimen>
+    <dimen name="taskbar_contextual_button_suw_margin">64dp</dimen>
+    <dimen name="taskbar_contextual_button_suw_height">64dp</dimen>
+    <dimen name="taskbar_back_button_suw_start_margin">48dp</dimen>
+    <dimen name="taskbar_back_button_suw_bottom_margin">1dp</dimen>
+    <dimen name="taskbar_back_button_suw_height">72dp</dimen>
+    <dimen name="taskbar_running_app_indicator_height">2dp</dimen>
+    <dimen name="taskbar_running_app_indicator_width">12dp</dimen>
+    <dimen name="taskbar_running_app_indicator_top_margin">4dp</dimen>
+    <dimen name="taskbar_minimized_app_indicator_width">6dp</dimen>
+    <dimen name="taskbar_line_indicator_width_spring">20dp</dimen>
+    <dimen name="taskbar_app_translate_y_spring">4dp</dimen>
+    <!-- This should be set to a value larger than all possible drop targets, including abstract floating views and bubbles-->
+    <dimen name="taskbar_dragged_icon_elevation">5dp</dimen>
+
+    <!-- Transient taskbar -->
+    <dimen name="transient_taskbar_padding">12dp</dimen>
+    <dimen name="transient_taskbar_min_width">150dp</dimen>
+    <dimen name="transient_taskbar_bottom_margin">24dp</dimen>
+    <dimen name="transient_taskbar_shadow_blur">40dp</dimen>
+    <dimen name="transient_taskbar_stroke_width">1dp</dimen>
+    <dimen name="transient_taskbar_key_shadow_distance">10dp</dimen>
+    <dimen name="transient_taskbar_stashed_height">32dp</dimen>
+    <dimen name="transient_taskbar_all_apps_button_translation_x_offset">8dp</dimen>
+    <dimen name="transient_taskbar_stash_spring_velocity_dp_per_s">400dp</dimen>
+    <dimen name="transient_taskbar_action_corner_padding">48dp</dimen>
+    <dimen name="taskbar_tooltip_vertical_padding">8dp</dimen>
+    <dimen name="taskbar_tooltip_horizontal_padding">16dp</dimen>
+    <dimen name="taskbar_tooltip_y_offset">4dp</dimen>
+    <dimen name="persistent_taskbar_icon_size">44dp</dimen>
+    <dimen name="transient_taskbar_icon_size">57dp</dimen>
+
+    <!-- An additional touch slop to prevent x-axis movement during the swipe up to show taskbar -->
+    <dimen name="transient_taskbar_clamped_offset_bound">16dp</dimen>
+    <!-- Taskbar swipe up thresholds -->
+    <dimen name="taskbar_from_nav_threshold">40dp</dimen>
+    <dimen name="taskbar_app_window_threshold">88dp</dimen>
+    <dimen name="taskbar_home_overview_threshold">156dp</dimen>
+    <dimen name="taskbar_catch_up_threshold">264dp</dimen>
+    <!-- Taskbar swipe down threshold -->
+    <dimen name="taskbar_to_nav_threshold">24dp</dimen>
+
+    <!-- Taskbar variables that help determine when to animate the Taskbar background -->
+    <!-- Velocity defined as dp per s. Negative because the gesture is an upwards motion. -->
+    <dimen name="taskbar_slow_velocity_y_threshold">-288dp</dimen>
+    <integer name="taskbar_background_duration">80</integer>
+
+    <!-- Taskbar swipe up threshold multipliers -->
+    <item name="taskbar_nav_threshold_mult" format="float" type="dimen">4.5</item>
+    <item name="taskbar_app_window_threshold_mult" format="float" type="dimen">10</item>
+    <item name="taskbar_home_overview_threshold_mult" format="float" type="dimen">18</item>
+    <item name="taskbar_catch_up_threshold_mult" format="float" type="dimen">30</item>
+
+    <!--  Taskbar 3 button spacing  -->
+    <dimen name="taskbar_button_space_inbetween">24dp</dimen>
+    <!-- This is half of taskbar_button_space_inbetween -->
+    <dimen name="taskbar_nav_button_space_inbetween">12dp</dimen>
+    <dimen name="taskbar_button_space_inbetween_phone">40dp</dimen>
+    <dimen name="taskbar_button_margin_split">48dp</dimen>
+    <dimen name="taskbar_button_margin_6_5">75dp</dimen>
+    <dimen name="taskbar_button_margin_default">48dp</dimen>
+
+    <!--  Taskbar contextual button group pill  -->
+    <dimen name="taskbar_contextual_group_padding_start">12dp</dimen>
+    <dimen name="taskbar_contextual_group_padding_end">10dp</dimen>
+    <dimen name="taskbar_contextual_group_padding_top">10dp</dimen>
+    <dimen name="taskbar_contextual_group_padding_bottom">12dp</dimen>
+
+    <!-- Taskbar education tooltip -->
+    <dimen name="taskbar_edu_tooltip_elevation">14dp</dimen>
+    <dimen name="taskbar_edu_tooltip_horizontal_margin">32dp</dimen>
+    <dimen name="taskbar_edu_tooltip_vertical_margin">24dp</dimen>
+    <dimen name="taskbar_edu_tooltip_enter_y_delta">20dp</dimen>
+    <dimen name="taskbar_edu_tooltip_exit_y_delta">-10dp</dimen>
+    <dimen name="taskbar_edu_swipe_lottie_width">348dp</dimen>
+    <dimen name="taskbar_edu_swipe_lottie_height">217dp</dimen>
+    <dimen name="taskbar_edu_features_lottie_width">170dp</dimen>
+    <dimen name="taskbar_edu_features_lottie_height">106dp</dimen>
+    <dimen name="taskbar_edu_features_horizontal_spacing">24dp</dimen>
+    <dimen name="taskbar_edu_features_tooltip_width_with_one_feature">412dp</dimen>
+    <dimen name="taskbar_edu_features_tooltip_width_with_two_features">428dp</dimen>
+    <dimen name="taskbar_edu_features_tooltip_width_with_three_features">624dp</dimen>
+    <dimen name="taskbar_edu_search_subtitle_text_size">12sp</dimen>
+
+    <!--- Taskbar Pinning -->
+    <dimen name="taskbar_pinning_popup_menu_width">300dp</dimen>
+    <dimen name="taskbar_pinning_popup_menu_vertical_margin">16dp</dimen>
+    <dimen name="taskbar_pinning_popup_menu_min_padding_from_screen_edge">16dp</dimen>
+
+    <!-- Taskbar Multi Instance Menu -->
+    <dimen name="taskbar_multi_instance_menu_min_padding_from_screen_edge">8dp</dimen>
+
+    <!--- The minimum insets size for the IME to be considered docked. -->
+    <dimen name="ime_docked_threshold">80dp</dimen>
+
+    <!-- Bubble bar -->
+    <dimen name="bubblebar_size">72dp</dimen>
+    <dimen name="bubblebar_stashed_handle_width">55dp</dimen>
+    <dimen name="bubblebar_stashed_size">@dimen/transient_taskbar_stashed_height</dimen>
+    <dimen name="bubblebar_stashed_handle_height">@dimen/taskbar_stashed_handle_height</dimen>
+    <dimen name="bubblebar_stashed_handle_spring_velocity_dp_per_s">@dimen/transient_taskbar_stash_spring_velocity_dp_per_s</dimen>
+    <!-- this is a pointer height minus 1dp to ensure the pointer overlaps with the bubblebar
+    background appropriately when close to the rounded corner -->
+    <dimen name="bubblebar_pointer_visible_size">9dp</dimen>
+    <dimen name="bubblebar_pointer_width">12dp</dimen>
+    <dimen name="bubblebar_pointer_height">10dp</dimen>
+    <dimen name="bubblebar_pointer_radius">2dp</dimen>
+    <!-- Container size with pointer included: bubblebar_size + bubblebar_pointer_size -->
+    <dimen name="bubblebar_size_with_pointer">80dp</dimen>
+    <dimen name="bubblebar_elevation">1dp</dimen>
+    <!-- TODO b/396539130: used wmshared value once resources are fixed -->
+    <dimen name="dragged_bubble_elevation">3dp</dimen>
+    <dimen name="bubblebar_hotseat_adjustment_threshold">90dp</dimen>
+    <dimen name="bubblebar_bounce_distance">20dp</dimen>
+
+    <dimen name="bubblebar_icon_size_small">32dp</dimen>
+    <dimen name="bubblebar_icon_size">36dp</dimen>
+    <dimen name="bubblebar_icon_size_persistent_taskbar">28dp</dimen>
+    <dimen name="bubblebar_badge_size">24dp</dimen>
+    <dimen name="bubblebar_icon_overlap">12dp</dimen>
+    <dimen name="bubblebar_icon_spacing">6dp</dimen>
+    <dimen name="bubblebar_icon_spacing_large">8dp</dimen>
+    <dimen name="bubblebar_icon_spacing_persistent_taskbar">10dp</dimen>
+    <dimen name="bubblebar_expanded_icon_spacing">12dp</dimen>
+    <dimen name="bubblebar_expanded_icon_spacing_persistent_taskbar">20dp</dimen>
+    <dimen name="bubblebar_background_margin_persistent_taskbar">4dp</dimen>
+    <dimen name="bubblebar_icon_elevation">1dp</dimen>
+    <dimen name="bubblebar_transient_taskbar_min_distance">12dp</dimen>
+
+    <!-- Bubble bar dismiss view -->
+    <dimen name="bubblebar_dismiss_target_size">@dimen/floating_dismiss_background_size</dimen>
+    <dimen name="bubblebar_dismiss_target_small_size">60dp</dimen>
+    <dimen name="bubblebar_dismiss_target_icon_size">@dimen/floating_dismiss_icon_size</dimen>
+    <dimen name="bubblebar_dismiss_target_bottom_margin">60dp</dimen>
+    <dimen name="bubblebar_dismiss_target_bottom_margin_above_bubble_bar">120dp</dimen>
+    <dimen name="bubblebar_dismiss_floating_gradient_height">548dp</dimen>
+    <dimen name="bubblebar_dismiss_zone_width">192dp</dimen>
+    <dimen name="bubblebar_dismiss_zone_height">242dp</dimen>
+
+    <!-- Bubble bar drop target -->
+    <dimen name="bubblebar_drop_target_corner_radius">36dp</dimen>
+    <dimen name="bubble_expanded_view_drop_target_default_width">412dp</dimen>
+    <dimen name="bubble_expanded_view_drop_target_default_height">600dp</dimen>
+    <dimen name="bubble_expanded_view_drop_target_corner_radius">28dp</dimen>
+    <dimen name="bubble_expanded_view_drop_target_padding">24dp</dimen>
+    <dimen name="bubble_expanded_view_drop_target_margin">16dp</dimen>
+
+    <!-- Bubble bar flyout view -->
+    <dimen name="bubblebar_flyout_padding">16dp</dimen>
+    <dimen name="bubblebar_flyout_elevation">4dp</dimen>
+    <dimen name="bubblebar_flyout_avatar_message_space">14dp</dimen>
+    <dimen name="bubblebar_flyout_min_width">238dp</dimen>
+    <dimen name="bubblebar_flyout_max_width">276dp</dimen>
+    <dimen name="bubblebar_flyout_triangle_width">12dp</dimen>
+    <dimen name="bubblebar_flyout_triangle_height">10dp</dimen>
+    <dimen name="bubblebar_flyout_triangle_overlap_amount">1dp</dimen>
+    <dimen name="bubblebar_flyout_triangle_radius">2dp</dimen>
+
+    <!-- Launcher splash screen -->
+    <!-- Note: keep this value in sync with the WindowManager/Shell dimens.xml -->
+    <!--     starting_surface_exit_animation_window_shift_length -->
+    <dimen name="starting_surface_exit_animation_window_shift_length">20dp</dimen>
+
+    <!-- Keyboard Quick Switch -->
+    <dimen name="keyboard_quick_switch_border_width">5dp</dimen>
+    <dimen name="keyboard_quick_switch_border_stroke">3dp</dimen>
+    <dimen name="keyboard_quick_switch_border_padding">2dp</dimen>
+    <dimen name="keyboard_quick_switch_taskview_width">104dp</dimen>
+    <dimen name="keyboard_quick_switch_taskview_height">136dp</dimen>
+    <dimen name="keyboard_quick_switch_taskview_icon_size">52dp</dimen>
+    <dimen name="keyboard_quick_switch_recents_icon_size">20dp</dimen>
+    <dimen name="keyboard_quick_switch_desktop_icon_size">32dp</dimen>
+    <dimen name="keyboard_quick_switch_margin_top">56dp</dimen>
+    <dimen name="keyboard_quick_switch_margin_bottom">24dp</dimen>
+    <dimen name="keyboard_quick_switch_margin_ends">16dp</dimen>
+    <dimen name="keyboard_quick_switch_view_spacing">16dp</dimen>
+    <dimen name="keyboard_quick_switch_view_small_spacing">4dp</dimen>
+    <dimen name="keyboard_quick_switch_view_radius">28dp</dimen>
+    <dimen name="keyboard_quick_switch_task_view_radius">16dp</dimen>
+    <dimen name="keyboard_quick_switch_no_recent_items_icon_size">24dp</dimen>
+    <dimen name="keyboard_quick_switch_no_recent_items_icon_margin">8dp</dimen>
+    <dimen name="keyboard_quick_switch_text_button_width">104dp</dimen>
+    <dimen name="keyboard_quick_switch_text_button_radius">360dp</dimen>
+    <dimen name="keyboard_quick_switch_text_button_horizontal_padding">16dp</dimen>
+    <dimen name="keyboard_quick_switch_text_button_fade_edge_length">20dp</dimen>
+    <dimen name="keyboard_quick_switch_scroll_button_width">36dp</dimen>
+    <dimen name="keyboard_quick_switch_scroll_button_height">56dp</dimen>
+    <dimen name="keyboard_quick_switch_scroll_button_horizontal_padding">6dp</dimen>
+    <dimen name="keyboard_quick_switch_scroll_button_vertical_padding">16dp</dimen>
+    <dimen name="keyboard_quick_switch_scroll_button_corner_radius">18dp</dimen>
+
+    <!-- Digital Wellbeing -->
+    <dimen name="digital_wellbeing_toast_height">48dp</dimen>
+
+    <!-- Nudge -->
+    <dimen name="nudge_elevation">14dp</dimen>
+    <dimen name="nudge_horizontal_margin">32dp</dimen>
+    <dimen name="nudge_vertical_margin">24dp</dimen>
+
+    <dimen name="nudge_width">428dp</dimen>
+    <dimen name="nudge_paddingBottom">16dp</dimen>
+    <dimen name="nudge_content_elements_spacing">8dp</dimen>
+    <dimen name="nudge_buttons_margin_top">36dp</dimen>
+    <dimen name="nudge_buttons_spacing">8dp</dimen>
+    <dimen name="nudge_button_horizontal_padding">6dp</dimen>
+    <dimen name="nudge_button_vertical_padding">12dp</dimen>
+    <dimen name="nudge_enter_y_delta">20dp</dimen>
+    <dimen name="nudge_exit_y_delta">-10dp</dimen>
+
+    <dimen name="nudge_default_position_side_spacing">16dp</dimen>
+
+    <!-- Add Desktop Button -->
+    <integer name="add_desktop_button_fade_duration">50</integer>
+    <integer name="add_desktop_button_fade_delay">33</integer>
+    <dimen name="newly_created_desktop_offscreen_position">40dp</dimen>
+    <item name="newly_created_desktop_spring_damping_ratio" format="float" type="dimen">0.8</item>
+    <item name="newly_created_desktop_spring_stiffness" format="float" type="dimen">380</item>
+
+    <!--
+        The corner radius of freeform tasks in desktop windowing.
+        The value should match the corresponding resource in the WindowManager Shell:
+        frameworks/base/libs/WindowManager/Shell/shared/res/values/dimen.xml.
+    -->
+    <dimen name="desktop_windowing_freeform_task_rounded_corner_radius">16dp</dimen>
+
+    <declare-styleable name="AllSetLinkSpan">
+        <attr name="android:textSize"/>
+        <attr name="android:fontFamily"/>
+    </declare-styleable>
+
+    <!--
+         TaskView specific attributes. These attributes are used to customize a TaskView view in
+         XML files.
+     -->
+    <declare-styleable name="TaskView">
+        <!-- Border color for a keyboard quick switch task views -->
+        <attr name="focusBorderColor" format="color" />
+        <attr name="hoverBorderColor" format="color" />
+        <attr name="focusBorderRadius" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="TaskContentView">
+        <!--
+             Border color for a focused or hovered TaskContentView. This is used when the
+             TaskContentView is used for a desktop task.
+         -->
+        <attr name="focusBorderColor"/>
+        <attr name="hoverBorderColor"/>
+    </declare-styleable>
+
+    <declare-styleable name="ClearAllButton">
+        <!-- focus border color for overview clear all button views -->
+        <attr name="focusBorderColor" />
+    </declare-styleable>
+
+    <declare-styleable name="AddDesktopButton">
+        <!-- focus border color for overview add desktop button views -->
+        <attr name="focusBorderColor" />
+    </declare-styleable>
+
+    <declare-styleable name="IconAppChip">
+        <!-- focus border color for overview app chip -->
+        <attr name="focusBorderColor" />
+    </declare-styleable>
+
+    <!--
+         Gesture nav edu specific attributes. These attributes are used to customize Gesture nav edu
+         view lottie animation colors in XML files.
+     -->
+    <declare-styleable name="RootSandboxLayout">
+        <attr name="surfaceContainer" format="color" />
+        <attr name="onContainerHome" format="color" />
+        <attr name="containerHome" format="color" />
+        <attr name="onContainerBack" format="color" />
+        <attr name="containerBack" format="color" />
+        <attr name="onContainerOverview" format="color" />
+        <attr name="containerOverview" format="color" />
+    </declare-styleable>
+
+    <string-array name="back_gesture_blocking_activities" translatable="false">
+        <item>com.android.launcher3/com.android.quickstep.interaction.GestureSandboxActivity</item>
+    </string-array>
+
+    <!-- The number of thumbnails and icons to keep in the cache. The thumbnail cache size also
+         determines how many thumbnails will be fetched in the background. -->
+    <integer name="recentsThumbnailCacheSize">3</integer>
+    <integer name="recentsIconCacheSize">12</integer>
+    <integer name="recentsScrollHapticMinGapMillis">20</integer>
+
+    <!-- Assistant Gesture -->
+    <integer name="assistant_gesture_min_time_threshold">200</integer>
+    <integer name="assistant_gesture_corner_deg_threshold">20</integer>
+
+    <string name="wellbeing_provider_pkg" translatable="false"/>
+
+    <dimen name="max_depth_blur_radius_enhanced">30dp</dimen>
+
+    <!-- Accessibility actions -->
+    <item type="id" name="action_move_to_top_or_left" />
+    <item type="id" name="action_move_to_bottom_or_right" />
+    <item type="id" name="action_create_application_bubble" />
+
+    <!-- The max scale for the wallpaper when it's zoomed in -->
+    <item name="config_wallpaperMaxScale" format="float" type="dimen">
+        @*android:dimen/config_wallpaperMaxScale
+    </item>
+
+    <string name="setup_wizard_pkg" translatable="false" />
+
+    <!-- This is a float because it is converted to dp later in DeviceProfile -->
+    <item name="taskbar_icon_size" type="dimen" format="float">44</item>
+
+    <!-- Expressive Dismiss -->
+    <item name="expressive_dismiss_task_trans_y_damping_ratio" type="dimen" format="float">0.65</item>
+    <item name="expressive_dismiss_task_trans_y_stiffness" type="dimen" format="float">850</item>
+    <item name="expressive_dismiss_task_trans_x_damping_ratio" type="dimen" format="float">0.8</item>
+    <item name="expressive_dismiss_task_trans_x_stiffness" type="dimen" format="float">2800</item>
+    <item name="expressive_dismiss_effects_damping_ratio" type="dimen" format="float">1</item>
+    <item name="expressive_dismiss_effects_stiffness" type="dimen" format="float">1600</item>
+
+    <!-- -Represents the arrow for the clip path in AllSetActivity -->
+    <string name="all_set_arrow_path" translatable="false">M61.554,32.22C58.4,27.364 55.245,22.502 52.091,17.646C50.045,14.494 47.963,11.299 45.196,8.796C42.43,6.287 38.846,4.514 35.171,4.745C31.945,4.951 28.954,6.686 26.593,8.952C24.232,11.218 22.398,14.008 20.594,16.773C15.715,24.237 10.829,31.702 5.95,39.173C3.632,42.718 1.252,46.419 0.611,50.645C-0.164,55.75 1.924,60.95 5.629,64.345C9.504,67.896 15.781,67.609 20.497,66.635C25.667,65.568 30.722,63.558 35.995,63.565C40.511,63.565 44.875,65.05 49.271,66.13C53.659,67.203 58.375,67.865 62.613,66.267C67.873,64.289 71.651,58.665 71.548,52.892C71.451,47.624 68.503,42.918 65.664,38.536C64.296,36.433 62.928,34.324 61.56,32.22H61.554Z</string>
+
+    <!-- The max memory usage of a single image for the Launcher process in MB -->
+    <integer name="max_launcher_memory_mb">300</integer>
+
+    <!-- The list of mime types that are allowed to be decoded for the Launcher process. -->
+    <string-array name="allowed_image_mime_types" translatable="false">
+        <item>image/png</item>
+        <item>image/jpeg</item>
+        <item>image/webp</item>
+        <item>image/gif</item>
+        <item>image/bmp</item>
+        <item>image/x-ico</item>
+        <item>image/vnd.wap.wbmp</item>
+        <item>image/heif</item>
+        <item>image/heic</item>
+        <item>image/avif</item>
+    </string-array>
+
+    <!-- Indicates that the color overrides set for widget picker are suitable for blur -->
+    <bool name="config_widgetPickerSupportsBlurTokens">true</bool>
+
+    <!-- Application name -->
+    <string name="derived_app_name" translatable="false">@string/lineageos_app_name</string>
+
+    <!-- Options for recent tasks -->
+    <!-- Title for an option to keep an app pinned to the screen until it is unpinned -->
+    <string name="recent_task_option_pin">Pin</string>
+    <!-- Title for an option to enter freeform mode for a given app -->
+    <string name="recent_task_option_freeform">Freeform</string>
+    <!-- Title and content description for an option to enter desktop windowing mode for a given app -->
+    <string name="recent_task_option_desktop">Desktop</string>
+    <string name="recent_split_task_option_desktop">Desktop for %1$s</string>
+    <!-- Title and content description for an option to move app to external display. -->
+    <string name="recent_task_option_external_display">Move to external display</string>
+    <!-- Title and content description for an option to remove the task [CHAR LIMIT=30] -->
+    <string name="recent_task_option_remove_task">Clear</string>
+
+    <!-- Title and content description for Desktop tile in Recents screen that contains apps opened inside desktop windowing mode [CHAR LIMIT=NONE] -->
+    <string name="recent_task_desktop">Desktop</string>
+
+    <!-- Recents: The empty recents string. [CHAR LIMIT=NONE] -->
+    <string name="recents_empty_message">No recent items</string>
+
+    <!-- Content description for the recent apps's accessibility option that opens its usage settings. [CHAR LIMIT=NONE] -->
+    <string name="accessibility_app_usage_settings">App usage settings</string>
+
+    <!-- Recents: Title of a button that clears the task list, i.e. closes all tasks. [CHAR LIMIT=30] -->
+    <string name="recents_clear_all">Clear all</string>
+
+    <!-- Recents: Title of a button that goes back from displaying tasks filtered by package name to displaying all tasks [CHAR LIMIT=30] -->
+    <string name="recents_back" translatable="false">Back</string>
+
+    <!-- Content description for the add desk button inside recents [CHAR_LIMIT=none] -->
+    <string name="add_desk_button_content_description">Add new desk</string>
+
+    <!-- Accessibility title for the list of recent apps [CHAR_LIMIT=none] -->
+    <string name="accessibility_recent_apps">Recent apps</string>
+
+    <!-- Accessibility title for an app card in Recents for apps that have time limit set
+     [CHAR_LIMIT=none] -->
+    <string name="task_contents_description_with_remaining_time"><xliff:g id="task_description" example="GMail">%1$s</xliff:g>, <xliff:g id="remaining_time" example="7 minutes left today">%2$s</xliff:g></string>
+
+    <!-- Text to show total app usage per day if it is less than 1 minute ("&lt;" is the
+     escaped form of '<'). [CHAR LIMIT=15] -->
+    <string name="shorter_duration_less_than_one_minute">&lt; 1 minute</string>
+
+    <!-- Annotation shown on an app card in Recents, telling that the app has a usage limit set by
+    the user, and a given time is left for it today [CHAR LIMIT=22] -->
+    <string name="time_left_for_app"><xliff:g id="time" example="7 minutes">%1$s</xliff:g> left today</string>
+
+    <!-- Accessibility title for the row of all-apps containing app predictions. [CHAR LIMIT=50] -->
+    <string name="title_app_suggestions">App suggestions</string>
+    <!-- Text of the tip when user lands in all apps view for the first time, indicating where the tip toast points to is the predicted apps section. [CHAR_LIMIT=50] -->
+    <string name="all_apps_prediction_tip">Your predicted apps</string>
+
+    <!-- Content description for a close button. [CHAR LIMIT=NONE] -->
+    <string name="gesture_tutorial_close_button_content_description" translatable="false">Close</string>
+
+    <!-- action shown to toggle predictions after onboarding -->
+    <string name="hotseat_prediction_settings">Settings</string>
+
+    <!-- tip shown if user has no items in hotseat to migrate -->
+    <string name="hotseat_auto_enrolled">Most-used apps appear here, and change based on routines</string>
+    <!-- tip shown if user declines migration and has no open spots for prediction -->
+    <string name="hotseat_tip_no_empty_slots">Drag apps off the bottom row to get app suggestions</string>
+    <!-- tip shown if user declines migration and has some open spots for prediction -->
+    <string name="hotseat_tip_gaps_filled">App suggestions added to empty space</string>
+    <!-- tip shown when user migrates and predictions are enabled in hotseat -->
+    <string name="hotsaet_tip_prediction_enabled">App suggestions enabled</string>
+    <!-- tip shown when hotseat edu is requested while predictions are disabled -->
+    <string name="hotsaet_tip_prediction_disabled">App suggestions are disabled</string>
+
+    <!-- Title of the Gesture Navigation Tutorial page [CHAR LIMIT=NONE] -->
+    <string name="gesture_tutorial_title">Gesture Navigation Tutorial</string>
+
+    <!-- Title of prompt shown before the gesture navigation tutorial to users who need to rotate their screen. [CHAR LIMIT=100] -->
+    <string name="gesture_tutorial_rotation_prompt_title">Rotate your device</string>
+    <!-- Prompt shown before the gesture navigation tutorial to users who need to rotate their screen to begin. [CHAR LIMIT=100] -->
+    <string name="gesture_tutorial_rotation_prompt">Please rotate your device to complete the gesture navigation tutorial</string>
+
+    <!-- Feedback shown during interactive parts of Back gesture tutorial for right edge when the gesture is too far from the edge. [CHAR LIMIT=100] -->
+    <string name="back_gesture_feedback_swipe_too_far_from_edge">Make sure you swipe from the far-right or far-left edge</string>
+    <!-- Feedback shown during interactive parts of Back gesture tutorial for right edge when the gesture is cancelled. [CHAR LIMIT=100] -->
+    <string name="back_gesture_feedback_cancelled">Make sure you swipe from the right or left edge to the middle of the screen and let go</string>
+    <!-- Feedback shown after completing the back gesture step if the user is following the full gesture tutorial flow. [CHAR LIMIT=100] -->
+    <string name="back_gesture_feedback_complete_with_overview_follow_up">You learned how to swipe from the right to go back. Next up, learn how to switch apps.</string>
+    <!-- Feedback shown after completing the back gesture step if the user is following the full gesture tutorial flow. [CHAR LIMIT=100] -->
+    <string name="back_gesture_feedback_complete_with_follow_up">You completed the go back gesture. Next up, learn how to switch apps.</string>
+    <!-- Feedback shown after completing the back gesture step if the user started this tutorial individually. [CHAR LIMIT=100] -->
+    <string name="back_gesture_feedback_complete_without_follow_up">You completed the go back gesture</string>
+    <!-- Feedback shown during interactive parts of Back gesture tutorial when the gesture is within the nav bar region. [CHAR LIMIT=100] -->
+    <string name="back_gesture_feedback_swipe_in_nav_bar">Make sure you don\'t swipe too close to the bottom of the screen</string>
+    <!-- Subtitle shown on the confirmation screen after successful gesture. [CHAR LIMIT=60] -->
+    <string name="back_gesture_tutorial_confirm_subtitle">To change the sensitivity of the back gesture, go to Settings</string>
+    <!-- Feedback shown during interactive parts of Home gesture tutorial when the gesture is started too far from the edge. [CHAR LIMIT=100] -->
+    <!-- Introduction title for the Back gesture tutorial. [CHAR LIMIT=100] -->
+    <string name="back_gesture_intro_title">Swipe to go back</string>
+    <!-- Introduction subtitle for the Back gesture tutorial. [CHAR LIMIT=200] -->
+    <string name="back_gesture_intro_subtitle">To go back to the last screen, swipe from the left or right edge to the middle of the screen.</string>
+    <!-- Title of the gesture tutorial section educating users on how to go back to the previous screen. [CHAR LIMIT=100] -->
+    <string name="back_gesture_tutorial_title">Go back</string>
+    <!-- Subtitle of the gesture tutorial section educating users on how to go to back to the previous screen [CHAR LIMIT=100] -->
+    <string name="back_gesture_tutorial_subtitle">Swipe from the left or right edge to the middle of the screen</string>
+
+    <string name="home_gesture_feedback_swipe_too_far_from_edge">Make sure you swipe up from the bottom edge of the screen</string>
+    <!-- Feedback shown during interactive parts of Home gesture tutorial when the Overview gesture is detected. [CHAR LIMIT=100] -->
+    <string name="home_gesture_feedback_overview_detected">Make sure you don\'t pause before letting go</string>
+    <!-- Feedback shown during interactive parts of Home gesture tutorial when the gesture is horizontal instead of vertical. [CHAR LIMIT=100] -->
+    <string name="home_gesture_feedback_wrong_swipe_direction">Make sure you swipe straight up</string>
+    <!-- Feedback shown after completing the home gesture step if the user is following the full gesture tutorial flow. [CHAR LIMIT=100] -->
+    <string name="home_gesture_feedback_complete_with_follow_up">You completed the go home gesture. Next up, learn how to go back.</string>
+    <!-- Feedback shown after completing the home gesture step if the user started this tutorial individually. [CHAR LIMIT=100] -->
+    <string name="home_gesture_feedback_complete_without_follow_up">You completed the go home gesture</string>
+    <!-- Introduction title for the Home gesture tutorial. [CHAR LIMIT=100] -->
+    <string name="home_gesture_intro_title">Swipe to go home</string>
+    <!-- Introduction subtitle for the Home gesture tutorial. [CHAR LIMIT=100] -->
+    <string name="home_gesture_intro_subtitle">Swipe up from the bottom of your screen. This gesture always takes you to the Home screen.</string>
+    <!-- Title of the gesture tutorial section educating users on how to go to the home screen. [CHAR LIMIT=100] -->
+    <string name="home_gesture_tutorial_title">Go home</string>
+    <!-- Subtitle of the gesture tutorial section educating users on how to go to the home screen [CHAR LIMIT=100] -->
+    <string name="home_gesture_tutorial_subtitle">Swipe up from the bottom of your screen</string>
+    <!-- Title message when users successfully learn to go to the home screen [CHAR LIMIT=100] -->
+    <string name="home_gesture_tutorial_success">Great job!</string>
+
+    <!-- Feedback shown during interactive parts of Overview gesture tutorial when the gesture is started too far from the edge. [CHAR LIMIT=100] -->
+    <string name="overview_gesture_feedback_swipe_too_far_from_edge">Make sure you swipe up from the bottom edge of the screen</string>
+    <!-- Feedback shown during interactive parts of Overview gesture tutorial when the Home gesture is detected. The window refers to the current app's window during the gesture. [CHAR LIMIT=100] -->
+    <string name="overview_gesture_feedback_home_detected">Try holding the window for longer before releasing</string>
+    <!-- Feedback shown during interactive parts of Overview gesture tutorial when the gesture is horizontal instead of vertical. [CHAR LIMIT=100] -->
+    <string name="overview_gesture_feedback_wrong_swipe_direction">Make sure you swipe straight up, then pause</string>
+    <!-- Feedback shown after completing the overview gesture step if the user is following the full gesture tutorial flow. [CHAR LIMIT=100] -->
+    <string name="overview_gesture_feedback_complete_with_follow_up">You learned how to use gestures. To turn off gestures, go to Settings.</string>
+    <!-- Feedback shown after completing the overview gesture step if the user started this tutorial individually. [CHAR LIMIT=100] -->
+    <string name="overview_gesture_feedback_complete_without_follow_up">You completed the switch apps gesture</string>
+    <!-- Introduction title for the Overview gesture tutorial. [CHAR LIMIT=100] -->
+    <string name="overview_gesture_intro_title">Swipe to switch apps</string>
+    <!-- Introduction subtitle for the Overview gesture tutorial. [CHAR LIMIT=100] -->
+    <string name="overview_gesture_intro_subtitle">To switch between apps, swipe up from the bottom of your screen, hold, then release.</string>
+    <!-- Title of the gesture tutorial section educating users on how to switch between apps. [CHAR LIMIT=100] -->
+    <string name="overview_gesture_tutorial_title">Switch apps</string>
+    <!-- Subtitle of the gesture tutorial section educating users on how to switch between apps [CHAR LIMIT=100] -->
+    <string name="overview_gesture_tutorial_subtitle">Swipe up from the bottom of your screen, hold, then release</string>
+    <!-- Title message when users successfully learn to switch between apps [CHAR LIMIT=100] -->
+    <string name="overview_gesture_tutorial_success">Well done!</string>
+
+
+    <!-- Title shown during interactive part of Assistant gesture tutorial. [CHAR LIMIT=30] -->
+    <string name="assistant_gesture_tutorial_playground_title" translatable="false">Tutorial: Assistant</string>
+    <!-- Subtitle shown during interactive parts of Assistant gesture tutorial. [CHAR LIMIT=60] -->
+    <string name="assistant_gesture_tutorial_playground_subtitle" translatable="false">Try swiping diagonally from a bottom corner of the screen</string>
+    <!-- Feedback shown during interactive parts of Assistant gesture tutorial when the gesture is started too far from the corner. [CHAR LIMIT=100] -->
+    <string name="assistant_gesture_feedback_swipe_too_far_from_corner" translatable="false">Make sure you swipe from a bottom corner of the screen.</string>
+    <!-- Feedback shown during interactive parts of Assistant gesture tutorial when the gesture doesn't go diagonally enough. [CHAR LIMIT=100] -->
+    <string name="assistant_gesture_feedback_swipe_not_diagonal" translatable="false">Make sure you swipe diagonally.</string>
+    <!-- Feedback shown during interactive parts of Assistant gesture tutorial when the gesture doesn't go far enough. [CHAR LIMIT=100] -->
+    <string name="assistant_gesture_feedback_swipe_not_long_enough" translatable="false">Try swiping further.</string>
+
+    <!-- Title shown in sandbox mode part of gesture tutorial. [CHAR LIMIT=30] -->
+    <string name="sandbox_mode_title" translatable="false">Sandbox Mode</string>
+    <!-- Subtitle shown in sandbox mode part of gesture tutorial. [CHAR LIMIT=60] -->
+    <string name="sandbox_mode_subtitle" translatable="false">Try any navigation gesture</string>
+    <!-- Feedback shown in sandbox mode when the back gesture is successfully issued. [CHAR LIMIT=60] -->
+    <string name="sandbox_mode_back_gesture_feedback_successful" translatable="false">Back gesture successful</string>
+    <!-- Feedback shown in sandbox mode when the assistant gesture is a successfully issued. [CHAR LIMIT=60] -->
+    <string name="sandbox_mode_assistant_gesture_feedback_successful" translatable="false">Assistant gesture successful</string>
+    <!-- Feedback shown in sandbox mode when the home gesture is a successfully issued. [CHAR LIMIT=60] -->
+    <string name="sandbox_mode_home_gesture_feedback_successful" translatable="false">Home gesture successful</string>
+    <!-- Feedback shown in sandbox mode when the overview gesture is a successfully issued. [CHAR LIMIT=60] -->
+    <string name="sandbox_mode_overview_gesture_feedback_successful" translatable="false">Overview gesture successful</string>
+    <!-- Feedback shown in sandbox mode when the back gesture swipe is too far from the edge. [CHAR LIMIT=60] -->
+    <string name="sandbox_mode_back_gesture_feedback_swipe_too_far_from_edge" translatable="false">Make sure you swipe from the left/right edge of the screen</string>
+
+    <!-- Title shown on the confirmation screen after successful gesture. [CHAR LIMIT=30] -->
+    <string name="gesture_tutorial_confirm_title">All set</string>
+    <!-- Button text shown on a button on the feedback popup to complete the gesture tutorial. [CHAR LIMIT=14] -->
+    <string name="gesture_tutorial_action_button_label">Done</string>
+    <!-- Button text shown on a button to go to Settings. [CHAR LIMIT=14] -->
+    <string name="gesture_tutorial_action_button_label_settings">Settings</string>
+    <!-- Feedback title to try again. [CHAR LIMIT=30] -->
+    <string name="gesture_tutorial_try_again">Try again</string>
+    <!-- Feedback title for a successful gesture. [CHAR LIMIT=30] -->
+    <string name="gesture_tutorial_nice">Nice!</string>
+    <!-- Feedback subtext displaying the current step and the total number of steps for the tutorial. [CHAR LIMIT=30] -->
+    <string name="gesture_tutorial_step">Tutorial <xliff:g id="current">%1$d</xliff:g>/<xliff:g id="total">%2$d</xliff:g></string>
+
+    <!-- Title of "All Set" page [CHAR LIMIT=NONE] -->
+    <string name="allset_title">All set!</string>
+    <!-- Hint string at the bottom of "All Set" page [CHAR LIMIT=NONE] -->
+    <string name="allset_hint">Swipe up to go home</string>
+    <!-- Hint string at the bottom of "All Set" page for button navigation [CHAR LIMIT=NONE] -->
+    <string name="allset_button_hint">Tap the home button to go to your home screen</string>
+    <!-- Description of "All Set" page on the user's device when their device name is provided [CHAR LIMIT=NONE] -->
+    <string name="allset_description_generic">You\u2019re ready to start using your <xliff:g id="device" example="Pixel 6">%1$s</xliff:g></string>
+    <!-- Description of "All Set" page on the user's device when no device name is provided [CHAR LIMIT=NONE] -->
+    <string name="allset_description_fallback">You\u2019re ready to start using your device</string>
+    <!-- String linking to navigation settings on "All Set" page [CHAR LIMIT=NONE] -->
+    <string name="allset_navigation_settings"><annotation id="link">System navigation settings</annotation></string>
+    <!-- New Title of "All Set" page [CHAR LIMIT=NONE] -->
+    <string name="allset_title_expressive">Your <xliff:g id="device" example="Pixel 9">%1$s</xliff:g> is \nready!</string>
+    <!-- Description of "All Set" page on the user's device when no device name is provided [CHAR LIMIT=NONE] -->
+    <string name="allset_title_expressive_fallback">Your device is \nready!</string>
+    <!-- Fixed Title of "All Set" page [CHAR LIMIT=NONE] -->
+    <string name="allset_title_expressive_fixed">You\'re ready to roll!</string>
+    <!-- New subtitle of "All Set" page [CHAR LIMIT=NONE] -->
+    <string name="allset_subtitle_expressive">Enjoy your new <xliff:g id="device" example="phone">%1$s</xliff:g>!</string>
+    <!-- Subtitle of "All Set" page for Gesture Navigation [CHAR LIMIT=NONE] -->
+    <string name="allset_subtitle_expressive_gesture_navigation">Swipe up to get started with your <xliff:g id="device" example="phone">%1$s</xliff:g></string>
+    <!-- Subtitle of "All Set" page for 3 Button Navigation [CHAR LIMIT=NONE] -->
+    <string name="allset_subtitle_expressive_button_navigation">Tap to get started with your <xliff:g id="device" example="phone">%1$s</xliff:g></string>
+    <!-- String linking to navigation settings on "All Set" page [CHAR LIMIT=NONE] -->
+    <string name="allset_navigation_settings_expressive"><annotation id="link">Choose how to navigate</annotation></string>
+    <!-- Hint string at the bottom of "All Set" page [CHAR LIMIT=NONE] -->
+    <string name="allset_hint_expressive">Swipe up</string>
+    <!-- Hint string at the bottom of "All Set" page for button navigation [CHAR LIMIT=NONE] -->
+    <string name="allset_button_hint_expressive">Tap the home button</string>
+    <!-- String representing device type of a Tablet [CHAR LIMIT=30] -->
+    <string name="allset_device_type_tablet">tablet</string>
+    <!-- String representing device type of a Phone [CHAR LIMIT=30] -->
+    <string name="allset_device_type_phone">phone</string>
+
+    <!-- ******* Overview ******* -->
+    <!-- Label for a button that causes the current overview app to be shared. [CHAR_LIMIT=40] -->
+    <string name="action_share">Share</string>
+    <!-- Label for a button that causes a screen shot of the current app to be taken. [CHAR_LIMIT=40] -->
+    <string name="action_screenshot">Screenshot</string>
+    <!-- Label for a button that enters split screen selection mode. [CHAR_LIMIT=20] -->
+    <string name="action_split">Split</string>
+    <!-- Label for a button that saves a new app pair. [CHAR_LIMIT=20] -->
+    <string name="action_save_app_pair">Save app pair</string>
+    <!-- Label for toast with instructions for split screen selection mode. [CHAR_LIMIT=50] -->
+    <string name="toast_split_select_app">Tap another app to use split screen</string>
+    <string name="toast_contextual_split_select_app">Choose another app to use split screen</string>
+    <string name="toast_split_select_app_cancel">Cancel</string>
+    <string name="toast_split_select_cont_desc">Exit split screen selection</string>
+    <!-- Label for toast when app selected for split isn't supported. [CHAR_LIMIT=50] -->
+    <string name="toast_split_app_unsupported">Choose another app to use split screen</string>
+    <!-- Message shown when an action is blocked by a policy enforced by the app or the organization managing the device. [CHAR_LIMIT=NONE] -->
+    <string name="blocked_by_policy">This action isn\'t allowed by the app or your organization</string>
+    <string name="split_widgets_not_supported">Widgets not currently supported, please select another app</string>
+    <!-- Label for the sharesheet Image copy action [CHAR LIMIT=32] -->
+    <string name="action_image_copy">Copy</string>
+    <!-- Label for the sharesheet Image save action [CHAR LIMIT=32] -->
+    <string name="action_image_save">Save</string>
+
+
+    <!-- Accessibility label for the rotation suggestion button -->
+    <string name="accessibility_rotate_button">Rotate screen</string>
+
+    <!-- ******* Taskbar Edu ******* -->
+    <!-- Text description to describe Taskbar education animation for Taskbar autohide functionality. [CHAR_LIMIT=NONE] -->
+    <string name="taskbar_edu_swipe_animation_description">Animation showing how the taskbar comes into view from the bottom of the screen, and automatically hides when not in use</string>
+    <!-- Text description to describe Taskbar education animation for Taskbar pinning functionality. [CHAR_LIMIT=NONE] -->
+    <string name="taskbar_edu_pinning_animation_description">Animation showing how to pin your taskbar using a toggle, so the taskbar remains permanently visible at the bottom of the screen</string>
+    <!-- Text description to describe Taskbar education animation for Taskbar bubbles functionality. [CHAR_LIMIT=NONE] -->
+    <string name="taskbar_edu_bubbles_animation_description">Animation showing how to create a bubble from the taskbar using a drag gesture</string>
+    <!-- Text description to describe Taskbar education animation for split screen functionality. [CHAR_LIMIT=NONE] -->
+    <string name="taskbar_edu_split_screen_animation_description">Animation showing how to create a split screen, by dragging and dropping an app from the taskbar above an open app</string>
+    <!-- Text description to describe Taskbar education animation for app suggestion functionality. [CHAR_LIMIT=NONE] -->
+    <string name="taskbar_edu_suggested_app_animation_description">Animation showing how to access suggested apps on your device</string>
+    <!-- Text description to describe Taskbar education animation for app suggestion functionality. [CHAR_LIMIT=NONE] -->
+    <string name="taskbar_edu_suggested_search_animation_description">Animation showing how to search for an item on screen, by touching and holding the action key and selecting the area the item is in</string>
+    <!-- Accessibility title for the Taskbar education window. [CHAR_LIMIT=NONE] -->
+    <string name="taskbar_edu_a11y_title">Taskbar education</string>
+    <!-- Text in dialog that lets a user know how they can use the Taskbar to use multiple apps at once on their device. [CHAR_LIMIT=60] -->
+    <string name="taskbar_edu_splitscreen">Drag an app to the side to use 2 apps at once</string>
+    <!-- Text in dialog that lets a user know how they can use the Taskbar to create application bubble. [CHAR_LIMIT=60] -->
+    <string name="taskbar_edu_bubbles">Drag to the bottom corners to make it float</string>
+    <!-- Text in dialog that lets a user know how they can show the Taskbar on their device. [CHAR_LIMIT=60] -->
+    <string name="taskbar_edu_stashing">Swipe up slowly to show the Taskbar</string>
+    <!-- Text in dialog that lets a user know how the Taskbar suggests apps based on their usage. [CHAR_LIMIT=60] -->
+    <string name="taskbar_edu_suggestions">Get app suggestions based on your routine</string>
+    <!-- Title in dialog that shows a user how to pin the Taskbar. [CHAR_LIMIT 60] -->
+    <string name="taskbar_edu_pinning">Long press on the divider to pin the Taskbar</string>
+    <!-- Title in dialog that shows a user what they can do with the Taskbar. [CHAR_LIMIT=60] -->
+    <string name="taskbar_edu_features">Do more with the Taskbar</string>
+    <!-- Title in dialog that shows a user how to pin the Taskbar. [CHAR_LIMIT 60] -->
+    <string name="taskbar_edu_pinning_title">Always show the Taskbar</string>
+    <!-- Text in dialog that shows a user how to pin the Taskbar. [CHAR_LIMIT 150] -->
+    <string name="taskbar_edu_pinning_standalone">To always show the Taskbar on the bottom of your screen, touch &amp; hold the divider</string>
+    <!-- Text in dialog that shows a user how to create a bubble from the Taskbar icon. [CHAR_LIMIT 150] -->
+    <string name="taskbar_edu_bubbles_standalone">Drag an app to the corner to make it float</string>
+    <!-- Title in dialog that shows a user how to invoke the Search feature. [CHAR_LIMIT 150] -->
+    <string name="taskbar_search_edu_title">Touch &amp; hold the action key to search what\'s on your screen</string>
+    <!-- Message showed to user to disclose privacy information they need to accept in order to access the app. [CHAR LIMIT=200]-->
+    <string name="taskbar_edu_search_disclosure">This product uses the selected part of your screen to search. Google\'s <xliff:g example="https://policies.google.com/privacy/embedded" id="begin_privacy_link">&lt;a href=\"%1$s\"&gt;</xliff:g>Privacy Policy<xliff:g id="end_privacy_link">&lt;/a&gt;</xliff:g> and <xliff:g example="https://policies.google.com/terms" id="begin_tos_link">&lt;a href=\"%2$s\"&gt;</xliff:g>Terms of Service<xliff:g id="end_tos_link">&lt;/a&gt;</xliff:g> apply.</string>
+    <!-- Text on button to exit a tutorial [CHAR_LIMIT=16] -->
+    <string name="taskbar_edu_close">Close</string>
+    <!-- Text on button to finish a tutorial [CHAR_LIMIT=16] -->
+    <string name="taskbar_edu_done">Done</string>
+    <!-- Text on button to show the tutorial next page [CHAR_LIMIT=16] -->
+    <string name="taskbar_edu_next">Next</string>
+        <!-- Content description for home button [CHAR_LIMIT=16] -->
+    <string name="taskbar_button_home">Home</string>
+    <!-- Content description for accessibility button [CHAR_LIMIT=16] -->
+    <string name="taskbar_button_a11y">Accessibility</string>
+    <!-- Content description for back button [CHAR_LIMIT=16] -->
+    <string name="taskbar_button_back">Back</string>
+    <!-- Content description for ime switcher button [CHAR_LIMIT=16] -->
+    <string name="taskbar_button_ime_switcher">IME switcher</string>
+    <!-- Content description for recents button [CHAR_LIMIT=16] -->
+    <string name="taskbar_button_recents">Recents</string>
+    <!-- Content description for notifications button [CHAR_LIMIT=16] -->
+    <string name="taskbar_button_notifications">Notifications</string>
+    <!-- Content description for quick settings button [CHAR_LIMIT=16] -->
+    <string name="taskbar_button_quick_settings">Quick Settings</string>
+    <!-- Content description for more options button [CHAR_LIMIT=16] -->
+    <string name="taskbar_button_more_options">More options</string>
+    <!-- Accessibility title for the Taskbar window. [CHAR_LIMIT=NONE] -->
+    <string name="taskbar_a11y_title">Taskbar</string>
+    <!-- Accessibility title for the Bubble Bar. [CHAR_LIMIT=NONE] -->
+    <string name="bubble_bar_a11y_title">Bubble bar</string>
+    <!-- Accessibility title for the Taskbar window on phones. [CHAR_LIMIT=NONE] -->
+    <string name="taskbar_phone_a11y_title">Navigation bar</string>
+    <!-- Text in popup dialog for user to switch between always showing Taskbar or not. [CHAR LIMIT=30] -->
+    <string name="always_show_taskbar">Always show Taskbar</string>
+    <!-- Text in popup dialog for user to switch between system navigation modes. [CHAR LIMIT=30] -->
+    <string name="change_navigation_mode">Change navigation mode</string>
+    <!-- Accessibility title for the Taskbar vertical divider icon. [CHAR_LIMIT=NONE] -->
+    <string name="taskbar_divider_a11y_title">Taskbar Divider</string>
+    <!-- Accessibility title for the Taskbar Overflow icon. [CHAR_LIMIT=NONE] -->
+    <string name="taskbar_recents_overflow_a11y_title">Other recent apps</string>
+    <!-- Accessibility title for the Taskbar Overflow icon. [CHAR_LIMIT=NONE] -->
+    <string name="taskbar_pinned_overflow_a11y_title">Other apps</string>
+    <!-- Title of the tooltip that appears when the user drags an item to the unpin area of the taskbar. [CHAR LIMIT=NONE]-->
+    <string name="taskbar_drag_to_unpin_title">Remove</string>
+
+    <!-- Label for moving drop target to the top or left side of the screen, depending on orientation (from the Taskbar only). -->
+    <string name="move_drop_target_top_or_left">Move to top&#47;left</string>
+    <!-- Label for moving drop target to the bottom or right side of the screen, depending on orientation (from the Taskbar only). -->
+    <string name="move_drop_target_bottom_or_right">Move to bottom&#47;right</string>
+    <!-- Label for creating an application bubble (from the Taskbar only). -->
+    <string name="open_app_as_a_bubble">Open app as a bubble</string>
+
+    <!-- Accessibility action to move an item to the left [CHAR LIMIT=NONE] -->
+    <string name="action_move_item_left">Move item to the left</string>
+    <!-- Accessibility action to move an item to the right [CHAR LIMIT=NONE] -->
+    <string name="action_move_item_right">Move item to the right</string>
+
+    <!-- Accessibility pane title for quick switch view, which lists apps opened by the user, ordered by how recently the app was opened. -->
+    <string name="quick_switch_pane_title">Recent apps</string>
+
+    <!-- Content description for the quick switch view, which lists apps opened by the user, ordered by how recently the app was opened. -->
+    <string name="quick_switch_content_description">Recent app list</string>
+
+    <!-- Label for quick switch tile showing how many more apps are available. The number will be displayed above this text. [CHAR LIMIT=NONE] -->
+    <string name="quick_switch_overflow">{count, plural,
+            =1{more app}
+            other{more apps}
+        }</string>
+
+    <!-- Label for quick switch tile to launch desktop mode [CHAR LIMIT=NONE] -->
+    <string name="quick_switch_desktop">Desktop</string>
+
+    <!-- Accessibility label for quick switch tiles showing split tasks [CHAR LIMIT=NONE] -->
+    <string name="quick_switch_split_task"><xliff:g id="app_name_1" example="Chrome">%1$s</xliff:g> and <xliff:g id="app_name_2" example="Gmail">%2$s</xliff:g></string>
+    <!-- Accessibility label for quick switch tiles that include information about the tile's position in the parent list [CHAR LIMIT=NONE] -->
+    <string name="quick_switch_task_with_position_in_parent"><xliff:g id="task_description" example="Chrome">%1$s</xliff:g>, item <xliff:g id="index_in_parent" example="1">%2$d</xliff:g> of <xliff:g id="total_tasks" example="5">%3$d</xliff:g>, release key bindings to select</string>
+
+    <!-- Accessibility label for an arrow button within quick switch UI that scrolls the quick switch content left -->
+    <string name="quick_switch_scroll_arrow_left">Scroll left</string>
+    <!-- Accessibility label for an arrow button within quick switch UI that scrolls the quick switch content right -->
+    <string name="quick_switch_scroll_arrow_right">Scroll right</string>
+
+    <!-- Strings for bubble bar -->
+    <!-- Fallback name for a bubble if it does have a title [CHAR_LIMIT=none] -->
+    <string name="bubble_bar_bubble_fallback_description">Bubble</string>
+    <!-- content description for the overflow bubble [CHAR_LIMIT=none] -->
+    <string name="bubble_bar_overflow_description">Overflow</string>
+    <!-- Content description for a bubble bar chat bubble. [CHAR_LIMIT=none] -->
+    <string name="bubble_bar_bubble_description"><xliff:g id="notification_title" example="some title">%1$s</xliff:g> from <xliff:g id="app_name" example="Messenger">%2$s</xliff:g></string>
+    <!-- Content description for bubble bar when it has multiple bubbles. [CHAR_LIMIT=NONE] -->
+    <string name="bubble_bar_description_multiple_bubbles"><xliff:g id="bubble_bar_bubble_description" example="some title from YouTube">%1$s</xliff:g> and <xliff:g id="bubble_count" example="4">%2$d</xliff:g> more</string>
+    <!-- Action in accessibility menu to move the bubble bar to the left side of the screen. [CHAR_LIMIT=30] -->
+    <string name="bubble_bar_action_move_left">Move left</string>
+    <!-- Action in accessibility menu to move the bubble bar to the right side of the screen. [CHAR_LIMIT=30] -->
+    <string name="bubble_bar_action_move_right">Move right</string>
+    <!-- Action in accessibility menu to dismiss all bubbles. [CHAR_LIMIT=30] -->
+    <string name="bubble_bar_action_dismiss_all">Dismiss all</string>
+
+    <!-- Name of Google's new feature to circle to search anything on your phone screen, without
+     switching apps. [CHAR_LIMIT=60] -->
+    <string name="search_gesture_feature_title">Circle to Search</string>
+
+    <!-- Strings for task thumbnail header in Overview -->
+    <!-- Content description for the header app icon. [CHAR LIMIT=NONE] -->
+    <string name="header_app_icon_description">App icon</string>
+    <!-- Default app title for a task view in Overview. [CHAR LIMIT=NONE] -->
+    <string name="header_default_app_title">App title</string>
+    <!-- Content description for the header close button. [CHAR LIMIT=NONE] -->
+    <string name="header_close_icon_description">Close</string>
+
+    <!-- ******* Growth Framework Nudge ******* -->
+    <!-- Accessibility title for the nudge window. [CHAR_LIMIT=NONE] -->
+    <string name="nudge_a11y_title">Nudge</string>
+    <!-- Accessibility announcement for closing the nudge window. [CHAR_LIMIT=16] -->
+    <string name="nudge_a11y_close">Close</string>
+    <string name="nudge_a11y_image">Nudge image</string>
+
+    <!-- Content description for running app in desktop mode if it is active or minimized. [CHAR_LIMIT=NONE] -->
+    <string name="running_app_description"><xliff:g id="app_title" example="Gmail">%1$s</xliff:g> <xliff:g id="running_state" example="Active or Minimized">%2$s</xliff:g></string>
+    <!-- Description of the icon on the educational tooltip. [CHAR LIMIT=NONE] -->
+    <string name="ambientcue_first_time_edu_icon_description">
+        Icon
+    </string>
+    <!-- Title of the first time usage tooltip of the "ambientcue" area. [CHAR LIMIT=NONE] -->
+    <string name="ambientcue_first_time_edu_title">
+        Get helpful suggestions
+    </string>
+    <!-- Text of the first time usage tooltip of the "ambientcue" area. [CHAR LIMIT=NONE] -->
+    <string name="ambientcue_first_time_edu_text">
+        We use AI to proactively suggest info and actions relevant to what you’re doing on screen
+    </string>
+    <!-- Description for the Underlay close button. The Underlay view appears on the bottom of the screen and shows some AI hints. The button will dismiss the underlay view. [CHAR LIMIT=NONE] -->
+    <string name="underlay_close_button_content_description">Close</string>
+    <!-- Description for the Ambient Cue accessibility action label for expanding. [CHAR LIMIT=NONE] -->
+    <string name="ambient_cue_expand_action">expand</string>
+    <!-- Description for the Ambient Cue Icon. The icon appears on the bottom of the screen with some AI hints. [CHAR LIMIT=NONE] -->
+    <string name="ambient_cue_icon_content_description">Ambient Suggestions Icon</string>
+    <!-- Tooltip suggesting that user can long press on a suggestion to see data sources. [CHAR LIMIT=NONE] -->
+    <string name="ambientcue_long_press_edu_text">
+        Touch &amp; hold to see how suggestions are generated
+    </string>
+    <!-- Description for the Ambient Cue accessibility action label for autofilling. [CHAR LIMIT=NONE] -->
+    <string name="ambient_cue_autofill_action">autofill</string>
+
+    <style name="TextAppearance.GestureTutorial"
+        parent="@android:style/Theme.DeviceDefault.DayNight" />
+
+    <style name="TextAppearance.GestureTutorial.CallToAction"
+        parent="@android:style/Theme.DeviceDefault.DayNight" />
+
+    <style name="TextAppearance.GestureTutorial.MainTitle"
+        parent="TextAppearance.GestureTutorial">
+        <item name="android:textSize">36sp</item>
+        <item name="android:fontFamily">google-sans</item>
+    </style>
+
+    <style name="TextAppearance.GestureTutorial.MainTitle.Home"
+        parent="TextAppearance.GestureTutorial.MainTitle">
+        <item name="android:textColor">?attr/onContainerHome</item>
+    </style>
+
+    <style name="TextAppearance.GestureTutorial.MainTitle.Back"
+        parent="TextAppearance.GestureTutorial.MainTitle">
+        <item name="android:textColor">?attr/onContainerBack</item>
+    </style>
+
+    <style name="TextAppearance.GestureTutorial.MainTitle.Overview"
+        parent="TextAppearance.GestureTutorial.MainTitle">
+        <item name="android:textColor">?attr/onContainerOverview</item>
+    </style>
+
+    <style name="TextAppearance.GestureTutorial.MainTitle.Success.Home"
+        parent="TextAppearance.GestureTutorial.MainTitle.Home">
+    </style>
+
+    <style name="TextAppearance.GestureTutorial.MainTitle.Success.Back"
+        parent="TextAppearance.GestureTutorial.MainTitle.Back">
+    </style>
+
+    <style name="TextAppearance.GestureTutorial.MainTitle.Success.Overview"
+        parent="TextAppearance.GestureTutorial.MainTitle.Overview">
+        <item name="android:textColor">?attr/onContainerOverview</item>
+    </style>
+
+    <style name="TextAppearance.GestureTutorial.Subtitle"
+        parent="TextAppearance.GestureTutorial">
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:letterSpacing">0.02</item>
+        <item name="android:fontFamily">google-sans-text</item>
+    </style>
+
+    <style name="TextAppearance.GestureTutorial.Subtitle.Home"
+        parent="TextAppearance.GestureTutorial.Subtitle">
+        <item name="android:textColor">?attr/onContainerHome</item>
+    </style>
+
+    <style name="TextAppearance.GestureTutorial.Subtitle.Back"
+        parent="TextAppearance.GestureTutorial.Subtitle">
+        <item name="android:textColor">?attr/onContainerBack</item>
+    </style>
+
+    <style name="TextAppearance.GestureTutorial.Subtitle.Overview"
+        parent="TextAppearance.GestureTutorial.Subtitle">
+        <item name="android:textColor">?attr/onContainerOverview</item>
+    </style>
+
+    <style name="TextAppearance.GestureTutorial.Subtitle.Success.Home"
+        parent="TextAppearance.GestureTutorial.Subtitle">
+    </style>
+
+    <style name="TextAppearance.GestureTutorial.Subtitle.Success.Back"
+        parent="TextAppearance.GestureTutorial.Subtitle">
+    </style>
+
+    <style name="TextAppearance.GestureTutorial.Subtitle.Success.Overview"
+        parent="TextAppearance.GestureTutorial.Subtitle">
+        <item name="android:textColor">?attr/onContainerOverview</item>
+    </style>
+
+    <style name="TextAppearance.GestureTutorial.Feedback.Title"
+        parent="TextAppearance.GestureTutorial">
+        <item name="android:gravity">start</item>
+        <item name="android:textColor">@color/materialColorOnSurface</item>
+        <item name="android:fontFamily">google-sans</item>
+        <item name="android:letterSpacing">0.03</item>
+        <item name="android:textSize">36sp</item>
+        <item name="android:lineHeight">44sp</item>
+    </style>
+
+    <style name="TextAppearance.GestureTutorial.MenuButton"
+        parent="TextAppearance.GestureTutorial.Feedback.Title">
+        <item name="android:gravity">center</item>
+        <item name="fontWeight">400</item>
+    </style>
+
+    <style name="TextAppearance.GestureTutorial.MenuButton.Home"
+        parent="TextAppearance.GestureTutorial.MenuButton">
+        <item name="android:textColor">?attr/onContainerHome</item>
+    </style>
+
+    <style name="TextAppearance.GestureTutorial.MenuButton.Back"
+        parent="TextAppearance.GestureTutorial.MenuButton">
+        <item name="android:textColor">?attr/onContainerBack</item>
+    </style>
+
+    <style name="TextAppearance.GestureTutorial.MenuButton.Overview"
+        parent="TextAppearance.GestureTutorial.MenuButton">
+        <item name="android:textColor">?attr/onContainerOverview</item>
+    </style>
+
+    <style name="TextAppearance.GestureTutorial.Feedback.Title.AllSet"
+        parent="TextAppearance.GestureTutorial.Feedback.Title">
+        <item name="android:letterSpacing">0.03</item>
+        <item name="android:lineHeight">44sp</item>
+        <item name="android:textSize">@dimen/allset_page_allset_text_size</item>
+    </style>
+
+    <style name="TextAppearance.GestureTutorial.Dialog.Title"
+        parent="TextAppearance.GestureTutorial.Feedback.Title">
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:fontFamily">google-sans</item>
+        <item name="android:lineHeight">32sp</item>
+        <item name="android:textSize">24sp</item>
+    </style>
+
+    <style name="TextAppearance.GestureTutorial.Feedback.Subtitle"
+        parent="TextAppearance.GestureTutorial">
+        <item name="android:gravity">start</item>
+        <item name="android:textColor">@color/materialColorOnSurface</item>
+        <item name="android:fontFamily">google-sans-text</item>
+        <item name="android:letterSpacing">0.03</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:lineHeight">20sp</item>
+    </style>
+
+    <style name="TextAppearance.GestureTutorial.Feedback.Subtitle.AllSet"
+        parent="TextAppearance.GestureTutorial.Feedback.Subtitle">
+        <item name="android:textSize">18sp</item>
+        <item name="android:lineHeight">24sp</item>
+    </style>
+
+    <style name="TextAppearance.GestureTutorial.Dialog.Subtitle"
+        parent="TextAppearance.GestureTutorial.Feedback.Subtitle">
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:fontFamily">google-sans-text</item>
+        <item name="android:letterSpacing">0.025</item>
+        <item name="android:lineHeight">20sp</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="TextAppearance.GestureTutorial.Feedback.Subtext"
+        parent="TextAppearance.GestureTutorial.Feedback.Subtitle">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">?android:attr/colorAccent</item>
+        <item name="android:gravity">start</item>
+    </style>
+
+    <style name="TextAppearance.GestureTutorial.Feedback.Subtext.Dark"
+        parent="TextAppearance.GestureTutorial.Feedback.Subtext">
+        <item name="android:textColor">@color/materialColorOnSurface</item>
+    </style>
+
+    <style name="TextAppearance.GestureTutorial.ButtonLabel"
+        parent="TextAppearance.GestureTutorial.CallToAction">
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/materialColorOnPrimary</item>
+        <item name="android:letterSpacing">0.02</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:fontFamily">google-sans-text-medium</item>
+    </style>
+
+    <style name="TextAppearance.GestureTutorial.ButtonLabel.Home"
+        parent="TextAppearance.GestureTutorial.ButtonLabel">
+        <item name="android:textColor">?attr/containerHome</item>
+    </style>
+
+    <style name="TextAppearance.GestureTutorial.ButtonLabel.Back"
+        parent="TextAppearance.GestureTutorial.ButtonLabel">
+        <item name="android:textColor">?attr/containerBack</item>
+    </style>
+
+    <style name="TextAppearance.GestureTutorial.ButtonLabel.Overview"
+        parent="TextAppearance.GestureTutorial.ButtonLabel">
+        <item name="android:textColor">?attr/containerOverview</item>
+    </style>
+
+    <style name="TextAppearance.GestureTutorial.CancelButtonLabel"
+        parent="TextAppearance.GestureTutorial.ButtonLabel">
+        <item name="android:textColor">?android:attr/colorAccent</item>
+    </style>
+
+    <style name="TextAppearance.GestureTutorial.TextButtonLabel"
+        parent="TextAppearance.GestureTutorial.ButtonLabel">
+        <item name="android:textColor">?android:attr/colorAccent</item>
+    </style>
+
+    <style name="TextAppearance.GestureTutorial.LinkText"
+        parent="TextAppearance.GestureTutorial.Feedback.Subtitle">
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="AllSetTheme" parent="@style/DynamicColorsBaseLauncherTheme.NoActionBar">
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:enforceNavigationBarContrast">false</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowShowWallpaper">false</item>
+    </style>
+
+    <style name="AllSetTheme.Expressive" parent="AllSetTheme">
+        <item name="android:windowShowWallpaper">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+
+    <!--
+      Can be applied to views to color things like ripples and list highlights the workspace text
+      color.
+    -->
+    <style name="ThemeControlHighlightWorkspaceColor">
+        <item name="android:colorControlHighlight">?attr/workspaceTextColor</item>
+    </style>
+
+    <style name="OverviewActionsContainer">
+        <item name="buttonStyle">@style/OverviewActionButton</item>
+        <item name="android:buttonStyle">@style/OverviewActionButton</item>
+    </style>
+
+    <style name="OverviewActionsContainerBlur">
+        <item name="buttonStyle">@style/OverviewActionButton.Blur</item>
+        <item name="android:buttonStyle">@style/OverviewActionButton.Blur</item>
+    </style>
+
+    <style name="OverviewActionButton" parent="@android:style/Widget.DeviceDefault.Button.Borderless">
+        <item name="android:maxHeight">@dimen/overview_actions_height</item>
+        <item name="android:paddingVertical">4dp</item>
+        <item name="android:paddingHorizontal">@dimen/overview_actions_button_horizontal_padding
+        </item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/overview_button</item>
+        <item name="android:drawableTint">@color/overview_button</item>
+        <item name="android:tint">@color/materialColorOnSurface</item>
+        <item name="android:drawablePadding">8dp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textFontWeight">600</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:colorControlHighlight">?attr/workspaceTextColor</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:background">@drawable/overview_action_button_background</item>
+    </style>
+
+    <style name="OverviewActionButton.Blur">
+        <item name="android:background">@drawable/overview_action_button_background_blur</item>
+    </style>
+
+    <!-- Icon displayed on the taskbar -->
+    <style name="BaseIcon.Workspace.Taskbar" >
+        <item name="iconDisplay">taskbar</item>
+    </style>
+
+    <style name="TaskbarEdu.Button.Done" parent="@android:style/Widget.Material.Button">
+        <item name="android:background">@drawable/button_taskbar_edu_colored</item>
+        <item name="android:stateListAnimator">@null</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:minHeight">36dp</item>
+    </style>
+
+    <style name="TextAppearance.TaskbarEduTooltip.Title" parent="@android:style/TextAppearance.DeviceDefault.DialogWindowTitle">
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:fontFamily">google-sans</item>
+        <item name="android:textSize">24sp</item>
+    </style>
+
+    <style name="TextAppearance.TaskbarEduTooltip.Subtext" parent="android:TextAppearance.Material.Body1">
+        <item name="android:layout_marginTop">16dp</item>
+        <item name="android:fontFamily">google-sans-text</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="KeyboardQuickSwitchText">
+        <item name="fontFamily">google-sans-text</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/materialColorOnSurface</item>
+        <item name="lineHeight">20sp</item>
+    </style>
+
+    <style name="KeyboardQuickSwitchText.OnBackground" parent="KeyboardQuickSwitchText">
+        <item name="android:textColor">@color/materialColorOnSurface</item>
+    </style>
+
+    <style name="KeyboardQuickSwitchText.OnTaskView" parent="KeyboardQuickSwitchText">
+        <item name="android:requiresFadingEdge">horizontal</item>
+        <item name="android:fadeScrollbars">false</item>
+        <item name="android:fadingEdgeLength">20dp</item>
+        <item name="android:ellipsize">none</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textColor">@color/materialColorOnPrimaryContainer</item>
+    </style>
+
+    <style name="KeyboardQuickSwitchText.LargeTextOnTaskView"
+           parent="KeyboardQuickSwitchText.OnTaskView">
+        <item name="android:textSize">32sp</item>
+    </style>
+
+
+    <style name="GestureTutorialActivity" parent="@style/AppTheme">
+        <item name="background">@android:color/transparent</item>
+        <item name="surfaceContainer">@color/materialColorSurfaceContainerLow</item>
+        <item name="containerHome">@color/materialColorPrimaryContainer</item>
+        <item name="onContainerHome">@color/materialColorOnPrimaryContainer</item>
+        <item name="containerBack">@color/materialColorSecondaryContainer</item>
+        <item name="onContainerBack">@color/materialColorOnSecondaryContainer</item>
+        <item name="containerOverview">@color/materialColorTertiaryContainer</item>
+        <item name="onContainerOverview">@color/materialColorOnTertiaryContainer</item>
+    </style>
+
+    <style name="rotate_prompt_title" parent="TextAppearance.GestureTutorial.Dialog.Title">
+        <item name="android:textColor">@color/materialColorOnSurface</item>
+    </style>
+
+    <style name="rotate_prompt_subtitle" parent="TextAppearance.GestureTutorial.Dialog.Subtitle">
+        <item name="android:textColor">@color/materialColorOnSurfaceVariant</item>
+    </style>
+
+    <style name="ArrowTipTaskbarStyle">
+        <item name="arrowTipBackground">@color/materialColorSurfaceContainer</item>
+        <item name="arrowTipTextColor">@color/materialColorOnSurface</item>
+    </style>
+
+    <style name="IconAppChipMenuTextStyle">
+        <item name="android:fontFamily">google-sans-text-medium</item>
+        <item name="android:textSize">@dimen/task_thumbnail_icon_menu_text_size</item>
+        <item name="android:textColor">@color/materialColorOnSurface</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:letterSpacing">0.025</item>
+        <item name="android:lineHeight">20sp</item>
+    </style>
+
+    <style name="TextAppearance.Nudge.Title" parent="@android:style/TextAppearance.DeviceDefault.DialogWindowTitle">
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:fontFamily">google-sans</item>
+        <item name="android:textSize">24sp</item>
+    </style>
+
+    <style name="TextAppearance.Nudge.Subtext" parent="android:TextAppearance.Material.Body1">
+        <item name="android:layout_marginTop">16dp</item>
+        <item name="android:fontFamily">google-sans-text</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="Nudge.Button.Primary" parent="@android:style/Widget.Material.Button">
+        <item name="android:background">@drawable/button_nudge_colored</item>
+        <item name="android:stateListAnimator">@null</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:minHeight">36dp</item>
+    </style>
+
+    <style name="Nudge.Button.Secondary" parent="@android:style/Widget.Material.Button">
+        <item name="android:background">@drawable/button_nudge_colored</item>
+        <item name="android:stateListAnimator">@null</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:minHeight">36dp</item>
+    </style>
+
+    <style name="AllAppsBlurStyle">
+        <item name="allAppsScrimColor">@androidprv:color/shade_panel_scrim_color</item>
+        <item name="groupHighlight">@color/customColorSurfaceEffect1</item>
+        <item name="focusHighlight">@color/customColorSurfaceEffect2</item>
+        <item name="allAppsSurfaceLow">@color/customColorSurfaceEffect0</item>
+        <item name="allAppsSurfaceHighest">@color/customColorSurfaceEffect2</item>
+        <item name="allAppsUnselectedTab">@color/customColorSurfaceEffect2</item>
+        <item name="allappsHeaderProtectionColor">@color/customColorSurfaceEffect1</item>
+        <item name="privateSpaceSettingsColor">@color/customColorSurfaceEffect2</item>
+        <item name="privateSpaceDividerColor">@color/customColorSurfaceEffect3</item>
+        <item name="bottomSheetDragHandleColor">@color/materialColorOnSurface</item>
+    </style>
+
+    <style name="OverviewBlurStyle">
+        <item name="overviewScrimColor">?attr/overviewScrimColorBlur</item>
+        <item name="overviewActionsContainerStyle">@style/OverviewActionsContainerBlur</item>
+        <item name="overviewActionButtonStyle">@style/OverviewActionButton.Blur</item>
+        <item name="overviewScrimForegroundPrimary">?attr/overviewScrimForegroundPrimaryBlur</item>
+        <item name="overviewScrimForegroundSecondary">?attr/overviewScrimForegroundSecondaryBlur
+        </item>
+        <item name="addDesktopButtonBackgroundDrawable">@drawable/overview_action_button_background_blur</item>
+
+    </style>
+
+    <style name="OverviewBlurFallbackStyle">
+        <item name="overviewScrimColor">?attr/overviewScrimColorFallback</item>
+        <item name="overviewActionsContainerStyle">@style/OverviewActionsContainer</item>
+        <item name="overviewActionButtonStyle">@style/OverviewActionButton</item>
+        <item name="overviewScrimForegroundPrimary">@android:color/transparent</item>
+        <item name="overviewScrimForegroundSecondary">@android:color/transparent</item>
+        <item name="addDesktopButtonBackgroundDrawable">@drawable/overview_action_button_background</item>
+    </style>
 </resources>
