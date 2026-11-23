@@ -35,8 +35,8 @@ jobs:
             -e 's/@\*?android:color\/materialColor/@color\/materialColor/g' \
             -e 's/@\*?android:dimen\/taskbar_stashed_size/@dimen\/taskbar_stashed_size/g' {} +
 
-      - name: Build with Gradle
-        run: gradle assembleQuickstepDebug --stacktrace
+      - name: Build compat JAR and Launcher3 APK
+        run: gradle :aosp-compat:jar assembleQuickstepDebug --stacktrace
 
       - name: Upload APK artifact
         if: always()
