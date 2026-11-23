@@ -94,30 +94,28 @@
     <color name="system_neutral2_900">#FF181C1F</color>
     <color name="system_neutral2_1000">#FF000000</color>
 
-    <!-- Material 3 dynamic token fallbacks -->
-    <color name="materialColorPrimary">#FF0061A4</color>
-    <color name="materialColorOnPrimary">#FFFFFFFF</color>
-    <color name="materialColorPrimaryContainer">#FFD1E4FF</color>
-    <color name="materialColorOnPrimaryContainer">#FF001D36</color>
-    <color name="materialColorSecondaryContainer">#FFD8E2FF</color>
-    <color name="materialColorOnSecondaryContainer">#FF111C2B</color>
-    <color name="materialColorSecondaryFixed">#FFD8E2FF</color>
-    <color name="materialColorOnSecondaryFixedVariant">#FF3B4858</color>
-    <color name="materialColorTertiary">#FF7D5260</color>
-    <color name="materialColorTertiaryContainer">#FFFFD8E4</color>
-    <color name="materialColorOnTertiaryContainer">#FF31111D</color>
-    <color name="materialColorOnSurface">#FF1A1C1E</color>
-    <color name="materialColorSurfaceVariant">#FFE7E0EC</color>
-    <color name="materialColorOnSurfaceVariant">#FF49454F</color>
-    <color name="materialColorOutline">#FF79747E</color>
-    <color name="materialColorOutlineVariant">#FFCAC4D0</color>
-    <color name="materialColorSurfaceBright">#FFFEF7FF</color>
-    <color name="materialColorSurfaceDim">#FFDED8E1</color>
-    <color name="materialColorSurfaceContainerLowest">#FFFFFFFF</color>
-    <color name="materialColorSurfaceContainerLow">#FFF7F2FA</color>
-    <color name="materialColorSurfaceContainer">#FFF3EDF7</color>
-    <color name="materialColorSurfaceContainerHigh">#FFECE6F0</color>
-    <color name="materialColorSurfaceContainerHighest">#FFE6E0E9</color>
+    <!-- Tambahan token Material 3 lengkap -->
+    <color name="materialColorPrimaryFixed">#FFD1E4FF</color>
+    <color name="materialColorPrimaryFixedDim">#FFA6C8FF</color>
+    <color name="materialColorOnPrimaryFixed">#FF001D36</color>
+    <color name="materialColorOnPrimaryFixedVariant">#FF00497D</color>
+    <color name="materialColorSecondary">#FF535F70</color>
+    <color name="materialColorOnSecondary">#FFFFFFFF</color>
+    <color name="materialColorSecondaryFixedDim">#FFBBC7DB</color>
+    <color name="materialColorOnSecondaryFixed">#FF101C2B</color>
+    <color name="materialColorTertiaryFixed">#FFFFD8E4</color>
+    <color name="materialColorTertiaryFixedDim">#FFEFB8C8</color>
+    <color name="materialColorOnTertiary">#FFFFFFFF</color>
+    <color name="materialColorOnTertiaryFixed">#FF31111D</color>
+    <color name="materialColorOnTertiaryFixedVariant">#FF633B48</color>
+    <color name="materialColorSurface">#FFFEF7FF</color>
+    <color name="materialColorInverseSurface">#FF322F35</color>
+    <color name="materialColorInverseOnSurface">#FFF5EFF7</color>
+    <color name="materialColorInversePrimary">#FFA6C8FF</color>
+    <color name="materialColorError">#FFB3261E</color>
+    <color name="materialColorOnError">#FFFFFFFF</color>
+    <color name="materialColorErrorContainer">#FFF9DEDC</color>
+    <color name="materialColorOnErrorContainer">#FF410E0B</color>
 
     <!-- Surface effect fallbacks -->
     <color name="customColorSurfaceEffect0">#FFFDFCFF</color>
