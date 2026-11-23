@@ -12,6 +12,34 @@ kotlin {
     jvmToolchain(17)
 }
 
+// Ambil lokasi Android SDK dari ANDROID_HOME / ANDROID_SDK_ROOT atau local.properties
+def sdkDir = System.getenv("ANDROID_HOME") ?: System.getenv("ANDROID_SDK_ROOT")
+if (sdkDir == null) {
+    def localPropsFile = rootProject.file("local.properties")
+    if (localPropsFile.exists()) {
+        def props = new Properties()
+        localPropsFile.withInputStream { props.load(it) }
+        sdkDir = props.getProperty("sdk.dir")
+    }
+}
+
+dependencies {
+    // Android SDK 35 stub hanya untuk kompilasi kelas shim android.*
+    if (sdkDir != null) {
+        def androidJar = file("${sdkDir}/platforms/android-35/android.jar")
+        if (androidJar.exists()) {
+            compileOnly files(androidJar)
+        }
+    }
+
+    // Anotasi Dagger (@Scope, @Qualifier, @Inject)
+    compileOnly 'javax.inject:javax.inject:1'
+    compileOnly 'com.google.dagger:dagger:2.51.1'
+
+    // Coroutines & Flow untuk DisplayLibShims (StateFlow, CoroutineScope)
+    compileOnly 'org.jetbrains.kotlinx:kotlinx-coroutines-core:1.8.1'
+}
+
 tasks.register('copyCompatJarToAppLibs', Copy) {
     dependsOn 'jar'
     from layout.buildDirectory.file("libs/${project.name}.jar")
