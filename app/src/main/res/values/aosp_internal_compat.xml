@@ -76,6 +76,16 @@
     <color name="customColorSurfaceEffect0Fallback">#FFFDFCFF</color>
     <attr name="disabledIconAlpha" format="float" />
 
+    <color name="materialColorSurfaceContainerLowest">#FFFFFFFF</color>
+    <color name="materialColorSurfaceContainerHigh">#FFECE6F0</color>
+    <color name="materialColorSurfaceContainerHighest">#FFE6E0E9</color>
+    <color name="materialColorSurfaceDim">#FFDED8E1</color>
+    <color name="materialColorSurfaceBright">#FFFEF7FF</color>
+    <color name="materialColorOutlineVariant">#FFCAC4D0</color>
+    <color name="materialColorSecondaryFixed">#FFD8E2FF</color>
+    <color name="materialColorOnSecondaryFixedVariant">#FF3B4858</color>
+    <color name="materialColorOnSurfaceVariant">#FF49454F</color>
+
     <!-- Private AOSP / SystemUI dimen fallbacks -->
     <dimen name="floating_dismiss_icon_size">24dp</dimen>
     <dimen name="floating_dismiss_background_size">48dp</dimen>
