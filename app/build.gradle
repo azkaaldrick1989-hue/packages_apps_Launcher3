@@ -16,6 +16,13 @@ android {
         versionName "1.0"
     }
 
+    flavorDimensions "variant"
+    productFlavors {
+        quickstep {
+            dimension "variant"
+        }
+    }
+
     buildTypes {
         release {
             minifyEnabled false
@@ -47,19 +54,19 @@ android {
                 '../src',
                 '../src_shortcuts_overrides',
                 '../src_ui_overrides',
-                '../quickstep/src',
                 '../shared/src'
             ]
-            res.srcDirs = [
-                '../res',
-                '../quickstep/res'
-            ]
+            res.srcDirs = ['../res']
             assets.srcDirs = ['../assets']
-            aidl.srcDirs = ['../quickstep/src']
             proto {
                 srcDir '../protos'
                 srcDir '../protos_overrides'
             }
+        }
+        quickstep {
+            java.srcDirs = ['../quickstep/src']
+            res.srcDirs = ['../quickstep/res']
+            aidl.srcDirs = ['../quickstep/src']
         }
     }
 
