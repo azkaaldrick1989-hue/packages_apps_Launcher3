@@ -23,38 +23,76 @@
     <color name="system_shadow_dark">#66000000</color>
     <color name="system_shadow_light">#33000000</color>
 
-    <!-- Monet / Material You palette fallbacks -->
+    <!-- Monet / Material You palette fallbacks (full 0..1000 range) -->
     <color name="system_accent1_0">#FFFFFFFF</color>
+    <color name="system_accent1_10">#FFFAFCFF</color>
+    <color name="system_accent1_50">#FFF0F6FF</color>
     <color name="system_accent1_100">#FFD1E4FF</color>
     <color name="system_accent1_200">#FFA6C8FF</color>
     <color name="system_accent1_300">#FF6FA6FF</color>
+    <color name="system_accent1_400">#FF3684F4</color>
+    <color name="system_accent1_500">#FF006BD6</color>
     <color name="system_accent1_600">#FF0061A4</color>
     <color name="system_accent1_700">#FF00497D</color>
     <color name="system_accent1_800">#FF003258</color>
     <color name="system_accent1_900">#FF001D36</color>
+    <color name="system_accent1_1000">#FF000000</color>
 
+    <color name="system_accent2_0">#FFFFFFFF</color>
+    <color name="system_accent2_10">#FFFAFCFF</color>
     <color name="system_accent2_50">#FFF6FAFF</color>
     <color name="system_accent2_100">#FFD8E2FF</color>
     <color name="system_accent2_200">#FFBAC6EA</color>
+    <color name="system_accent2_300">#FF9EAACE</color>
+    <color name="system_accent2_400">#FF838FB3</color>
+    <color name="system_accent2_500">#FF6A7699</color>
     <color name="system_accent2_600">#FF535E7B</color>
     <color name="system_accent2_700">#FF3C4762</color>
     <color name="system_accent2_800">#FF25314C</color>
+    <color name="system_accent2_900">#FF111C35</color>
+    <color name="system_accent2_1000">#FF000000</color>
 
+    <color name="system_accent3_0">#FFFFFFFF</color>
+    <color name="system_accent3_10">#FFFFFBFF</color>
+    <color name="system_accent3_50">#FFFFECF1</color>
     <color name="system_accent3_100">#FFFFD8E4</color>
     <color name="system_accent3_200">#FFFCB1C9</color>
+    <color name="system_accent3_300">#FFEF93B1</color>
+    <color name="system_accent3_400">#FFD17997</color>
+    <color name="system_accent3_500">#FFB3607D</color>
+    <color name="system_accent3_600">#FF964864</color>
+    <color name="system_accent3_700">#FF7A314C</color>
+    <color name="system_accent3_800">#FF5F1B36</color>
+    <color name="system_accent3_900">#FF3E001D</color>
+    <color name="system_accent3_1000">#FF000000</color>
 
     <color name="system_neutral1_0">#FFFFFFFF</color>
+    <color name="system_neutral1_10">#FFFCFCFF</color>
     <color name="system_neutral1_50">#FFFDFCFF</color>
     <color name="system_neutral1_100">#FFF1F0F4</color>
+    <color name="system_neutral1_200">#FFE2E2E6</color>
+    <color name="system_neutral1_300">#FFC6C6CA</color>
+    <color name="system_neutral1_400">#FFABABAF</color>
+    <color name="system_neutral1_500">#FF909094</color>
+    <color name="system_neutral1_600">#FF75777B</color>
     <color name="system_neutral1_700">#FF44474E</color>
+    <color name="system_neutral1_800">#FF2F3033</color>
     <color name="system_neutral1_900">#FF1A1C1E</color>
     <color name="system_neutral1_1000">#FF000000</color>
 
+    <color name="system_neutral2_0">#FFFFFFFF</color>
+    <color name="system_neutral2_10">#FFFAFCFF</color>
+    <color name="system_neutral2_50">#FFF4F7FB</color>
     <color name="system_neutral2_100">#FFE2E2E6</color>
     <color name="system_neutral2_200">#FFDDE3EA</color>
+    <color name="system_neutral2_300">#FFC1C7CE</color>
     <color name="system_neutral2_400">#FF8E9099</color>
+    <color name="system_neutral2_500">#FF72787E</color>
+    <color name="system_neutral2_600">#FF595F65</color>
     <color name="system_neutral2_700">#FF41484D</color>
     <color name="system_neutral2_800">#FF2B2F32</color>
+    <color name="system_neutral2_900">#FF181C1F</color>
+    <color name="system_neutral2_1000">#FF000000</color>
 
     <!-- Material 3 dynamic token fallbacks -->
     <color name="materialColorPrimary">#FF0061A4</color>
@@ -65,10 +103,13 @@
     <color name="materialColorOnSecondaryContainer">#FF111C2B</color>
     <color name="materialColorSecondaryFixed">#FFD8E2FF</color>
     <color name="materialColorOnSecondaryFixedVariant">#FF3B4858</color>
+    <color name="materialColorTertiary">#FF7D5260</color>
     <color name="materialColorTertiaryContainer">#FFFFD8E4</color>
     <color name="materialColorOnTertiaryContainer">#FF31111D</color>
     <color name="materialColorOnSurface">#FF1A1C1E</color>
+    <color name="materialColorSurfaceVariant">#FFE7E0EC</color>
     <color name="materialColorOnSurfaceVariant">#FF49454F</color>
+    <color name="materialColorOutline">#FF79747E</color>
     <color name="materialColorOutlineVariant">#FFCAC4D0</color>
     <color name="materialColorSurfaceBright">#FFFEF7FF</color>
     <color name="materialColorSurfaceDim">#FFDED8E1</color>
