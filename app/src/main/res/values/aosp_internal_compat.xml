@@ -64,6 +64,14 @@
     <color name="customColorSurfaceEffect2">@color/system_accent2_100</color>
     <color name="customColorSurfaceEffect3">@color/system_accent3_100</color>
 
+    <color name="materialColorSurfaceContainerLow">#FFF7F2FA</color>
+    <color name="materialColorPrimaryContainer">#FFD1E4FF</color>
+    <color name="materialColorOnPrimaryContainer">#FF001D36</color>
+    <color name="materialColorSecondaryContainer">#FFD8E2FF</color>
+    <color name="materialColorOnSecondaryContainer">#FF111C2B</color>
+    <color name="materialColorTertiaryContainer">#FFFFD8E4</color>
+    <color name="materialColorOnTertiaryContainer">#FF31111D</color>
+
     <!-- Private AOSP / SystemUI dimen fallbacks -->
     <dimen name="floating_dismiss_icon_size">24dp</dimen>
     <dimen name="floating_dismiss_background_size">48dp</dimen>
