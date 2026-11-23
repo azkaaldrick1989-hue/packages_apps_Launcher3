@@ -3,6 +3,7 @@
     <!-- Shade & system fallback colors -->
     <color name="shade_panel_bg">#CC1E1E1E</color>
     <color name="shade_panel_fg">#FFFFFFFF</color>
+    <color name="shade_panel_scrim_color">#99000000</color>
     <color name="system_error_dim_dark">#FF93000A</color>
     <color name="system_error_dim_light">#FFFFDAD6</color>
     <color name="system_inverse_on_surface_dark">#FF1A1C1E</color>
@@ -23,22 +24,26 @@
     <color name="system_shadow_light">#33000000</color>
 
     <!-- Monet / Material You palette fallbacks -->
+    <color name="system_accent1_0">#FFFFFFFF</color>
     <color name="system_accent1_100">#FFD1E4FF</color>
     <color name="system_accent1_200">#FFA6C8FF</color>
     <color name="system_accent1_300">#FF6FA6FF</color>
     <color name="system_accent1_600">#FF0061A4</color>
     <color name="system_accent1_700">#FF00497D</color>
+    <color name="system_accent1_800">#FF003258</color>
     <color name="system_accent1_900">#FF001D36</color>
 
     <color name="system_accent2_50">#FFF6FAFF</color>
     <color name="system_accent2_100">#FFD8E2FF</color>
     <color name="system_accent2_200">#FFBAC6EA</color>
     <color name="system_accent2_600">#FF535E7B</color>
+    <color name="system_accent2_700">#FF3C4762</color>
     <color name="system_accent2_800">#FF25314C</color>
 
     <color name="system_accent3_100">#FFFFD8E4</color>
     <color name="system_accent3_200">#FFFCB1C9</color>
 
+    <color name="system_neutral1_0">#FFFFFFFF</color>
     <color name="system_neutral1_50">#FFFDFCFF</color>
     <color name="system_neutral1_100">#FFF1F0F4</color>
     <color name="system_neutral1_700">#FF44474E</color>
@@ -51,7 +56,17 @@
     <color name="system_neutral2_700">#FF41484D</color>
     <color name="system_neutral2_800">#FF2B2F32</color>
 
-    <!-- Surface effect fallbacks -->
+    <!-- Material & Surface effect fallbacks -->
+    <color name="materialColorPrimary">#FF0061A4</color>
+    <color name="materialColorOnSurface">#FF1A1C1E</color>
+    <color name="customColorSurfaceEffect0">#FFFDFCFF</color>
     <color name="customColorSurfaceEffect1">@color/system_accent1_100</color>
     <color name="customColorSurfaceEffect2">@color/system_accent2_100</color>
+    <color name="customColorSurfaceEffect3">@color/system_accent3_100</color>
+
+    <!-- Private AOSP / SystemUI dimen fallbacks -->
+    <dimen name="floating_dismiss_icon_size">24dp</dimen>
+    <dimen name="floating_dismiss_background_size">48dp</dimen>
+    <dimen name="desktop_windowing_freeform_rounded_corner_radius">16dp</dimen>
+    <dimen name="taskbar_stashed_size">24dp</dimen>
 </resources>
