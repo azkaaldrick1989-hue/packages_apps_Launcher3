@@ -108,20 +108,30 @@ dependencies {
     // Modul lokal penghasil .jar shim kompatibilitas AOSP
     implementation project(':aosp-compat')
 
-    // Memuat file .jar dan .aar dari folder app/libs/ (kecuali stub framework)
+    // Memuat file .jar dan .aar dari folder app/libs/ (kecuali stub framework & duplikat aosp-compat)
     implementation fileTree(
         dir: 'libs',
         include: ['*.jar', '*.aar'],
-        exclude: ['framework-hidden.jar', 'SystemUI-shared.jar', 'WindowManager-Shell.jar']
+        exclude: [
+            'aosp-compat.jar',
+            'framework-hidden.jar',
+            'SystemUI-shared.jar',
+            'WindowManager-Shell.jar'
+        ]
     )
 
     // Stub framework/hidden-API hanya untuk kompilasi (jika tersedia di app/libs/)
     compileOnly fileTree(
         dir: 'libs',
-        include: ['framework-hidden.jar', 'SystemUI-shared.jar', 'WindowManager-Shell.jar']
+        include: [
+            'framework-hidden.jar',
+            'SystemUI-shared.jar',
+            'WindowManager-Shell.jar'
+        ]
     )
 
-    // Anotasi JSR-305 (@ThreadSafe, @Nullable, dll.)
+    // Coroutines & Anotasi JSR-305 (@ThreadSafe, @Nullable, dll.)
+    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.8.1'
     implementation 'javax.annotation:javax.annotation-api:1.3.2'
 
     // AndroidX & Material Core
