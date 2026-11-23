@@ -85,8 +85,11 @@ protobuf {
 }
 
 dependencies {
-    // Hidden APIs dari ROM target (wajib dikonversi ke .class JAR)
-    compileOnly files('libs/framework-hidden.jar')
+    // Akan otomatis dimuat jika file .jar sudah ditaruh di app/libs/
+    compileOnly fileTree(dir: 'libs', include: ['*.jar'])
+
+    // ... dependensi lainnya tetap sama ...
+}
 
     // AndroidX & Material Core
     implementation 'androidx.core:core-ktx:1.13.1'
