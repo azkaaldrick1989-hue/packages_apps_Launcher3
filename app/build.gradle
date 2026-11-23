@@ -1,7 +1,6 @@
 plugins {
     id 'com.android.application'
     id 'org.jetbrains.kotlin.android'
-    id 'org.jetbrains.kotlin.kapt'
     id 'com.google.protobuf'
 }
 
@@ -77,7 +76,6 @@ android {
     }
 }
 
-// Prioritaskan framework-hidden.jar di app/libs/ sebelum android.jar SDK 35 (jika file tersedia)
 def hiddenFrameworkJar = file('libs/framework-hidden.jar')
 if (hiddenFrameworkJar.exists()) {
     tasks.withType(JavaCompile).configureEach {
@@ -110,14 +108,14 @@ dependencies {
     // Modul lokal penghasil .jar shim kompatibilitas AOSP
     implementation project(':aosp-compat')
 
-    // JAR/AAR library yang perlu ikut dipaketkan ke dalam APK (kecuali stub framework)
+    // Memuat file .jar dan .aar dari folder app/libs/ (kecuali stub framework)
     implementation fileTree(
         dir: 'libs',
         include: ['*.jar', '*.aar'],
         exclude: ['framework-hidden.jar', 'SystemUI-shared.jar', 'WindowManager-Shell.jar']
     )
 
-    // Stub framework/hidden-API hanya untuk kompilasi (tidak ikut masuk DEX APK)
+    // Stub framework/hidden-API hanya untuk kompilasi (jika tersedia di app/libs/)
     compileOnly fileTree(
         dir: 'libs',
         include: ['framework-hidden.jar', 'SystemUI-shared.jar', 'WindowManager-Shell.jar']
@@ -141,8 +139,7 @@ dependencies {
     // Protobuf Lite
     implementation 'com.google.protobuf:protobuf-javalite:3.25.3'
 
-    // Dagger (Java + Kotlin)
+    // Dagger
     implementation 'com.google.dagger:dagger:2.51.1'
     annotationProcessor 'com.google.dagger:dagger-compiler:2.51.1'
-    kapt 'com.google.dagger:dagger-compiler:2.51.1'
 }
