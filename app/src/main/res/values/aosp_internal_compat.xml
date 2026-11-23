@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Fallback untuk @*android:color/system_* yang belum terekspos di SDK publik -->
+    <color name="system_error_dim_dark">#FF93000A</color>
+    <color name="system_error_dim_light">#FFFFDAD6</color>
+    <color name="system_inverse_on_surface_dark">#FF1A1C1E</color>
+    <color name="system_inverse_on_surface_light">#FFF1F0F4</color>
+    <color name="system_inverse_primary_dark">#FF0061A4</color>
+    <color name="system_inverse_primary_light">#FF9ECAFF</color>
+    <color name="system_inverse_surface_dark">#FFE2E2E6</color>
+    <color name="system_inverse_surface_light">#FF2F3033</color>
+    <color name="system_palette_key_color_error_dark">#FFDE3730</color>
+    <color name="system_palette_key_color_error_light">#FFDE3730</color>
+    <color name="system_primary_dim_dark">#FF74B8FF</color>
+    <color name="system_primary_dim_light">#FF00497D</color>
+    <color name="system_scrim_dark">#CC000000</color>
+    <color name="system_scrim_light">#66000000</color>
+    <color name="system_secondary_dim_dark">#FFB8C8DA</color>
+    <color name="system_secondary_dim_light">#FF3B4858</color>
+</resources>
